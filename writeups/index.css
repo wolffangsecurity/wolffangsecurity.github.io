@@ -7,7 +7,7 @@ body {
     padding: 20px; /* Add padding for space between content and border */
 }
 
-h1, h2, h3 {
+h1, h3 {
     color: #333;
     text-align: center; /* Center the headings */
     text-decoration: underline;
@@ -64,4 +64,8 @@ a:hover {
 .projects-container, .certifications-container {
     color: #333;
     text-align: center; /* Center the headings */
+}
+
+li{
+    list-style: none;
 }
