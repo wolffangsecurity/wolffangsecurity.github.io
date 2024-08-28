@@ -20,7 +20,7 @@ layout: default
 - Modules Completed: 113
 - Courses: SOC Analyst, Jr Penetration Tester, Red Teaming
 
-### [Hack The Box Academy]()
+### [Hack The Box Academy](./profdev/HTBAcademy.pdf)
 - Ranked in the Top 5%
 - Modules Completed: 176
 - Courses: SOC Analyst, Bug Bounty Hunter, Penetration Tester
