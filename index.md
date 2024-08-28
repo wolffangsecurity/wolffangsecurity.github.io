@@ -46,10 +46,10 @@ Bachelor of Arts in Information Science & Technology, Mercer University
 
 ## Certifications
 <div style="display: flex; justify-content: space-around; align-items: center;">
-  <img src="https://github.com/user-attachments/assets/7e448253-b8ce-4ab7-9217-4e7da44d9497" alt="CompTIA Security+ CE Certification" style="width: 200px; height: 200px; object-fit: cover; border:none;">
-  <img src="https://github.com/user-attachments/assets/07bfa185-b5e6-4035-bc41-d2c5260b4c55" alt="CompTIA CySA+ CE Certification" style="width: 200px; height: 200px; object-fit: cover; border:none;">
-  <img src="https://github.com/user-attachments/assets/e0e68578-d17b-45a9-939a-9648a6e7160a" alt="CompTIA PenTest+ CE Certification" style="width: 200px; height: 200px; object-fit: cover; border:none;">
-  <img src="https://github.com/user-attachments/assets/3f98dd6d-1eb3-434f-911d-5afa84d18413" alt="CompTIA Cloud CE Certification" style="width: 200px; height: 200px; object-fit: cover; border:none;"> 
+  <img src="https://github.com/user-attachments/assets/7e448253-b8ce-4ab7-9217-4e7da44d9497" alt="CompTIA Security+ CE Certification" style="width: 250px; height: 250px; object-fit: cover; border:none;">
+  <img src="https://github.com/user-attachments/assets/07bfa185-b5e6-4035-bc41-d2c5260b4c55" alt="CompTIA CySA+ CE Certification" style="width: 250px; height: 250px; object-fit: cover; border:none;">
+  <img src="https://github.com/user-attachments/assets/e0e68578-d17b-45a9-939a-9648a6e7160a" alt="CompTIA PenTest+ CE Certification" style="width: 250px; height: 250px; object-fit: cover; border:none;">
+  <img src="https://github.com/user-attachments/assets/3f98dd6d-1eb3-434f-911d-5afa84d18413" alt="CompTIA Cloud CE Certification" style="width: 250px; height: 250px; object-fit: cover; border:none;"> 
 </div>
 <br />
 <div style="display: flex; justify-content: space-around;">
