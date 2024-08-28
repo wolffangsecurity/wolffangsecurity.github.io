@@ -26,7 +26,7 @@ layout: default
 - Courses: SOC Analyst, Bug Bounty Hunter, Penetration Tester
 
 ### [Rangeforce](./profdev/Rangeforce.pdf)
-- Modules Completed: 121
+- Modules Completed: 106
 - Courses: Cloud Security, Web Application Security
 
 ### Level Effect
