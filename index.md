@@ -119,24 +119,23 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ```
 ## Certifications
 
-## Certifications
-
 ### Row 1
 <div style="display: flex; justify-content: space-around;">
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/79620983" width="150" height="150" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="150" height="150" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="150" height="150" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="250" height="250" style="border:none;"></iframe>
 </div>
 
 ### Row 2
 <div style="display: flex; justify-content: space-around;">
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/89136967" width="150" height="150" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/88635015" width="150" height="150" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/87875612" width="150" height="150" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/89136967" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/88635015" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/87875612" width="250" height="250" style="border:none;"></iframe>
 </div>
 
 ### Row 3
 <div style="display: flex; justify-content: center;">
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/62509156" width="150" height="150" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/62509156" width="250" height="250" style="border:none;"></iframe>
 </div>
+
 
