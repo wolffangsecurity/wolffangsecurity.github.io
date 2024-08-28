@@ -1,7 +1,7 @@
 ---
 layout: default 
 ---
-[LinkedIn](https://www.linkedin.com/in/sameal/)   sconroma@protonmail.com           
+       
 ## Projects
 ###  [CTF Writeups](./writeups/index.md)
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
