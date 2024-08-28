@@ -2,7 +2,8 @@
 layout: default 
 ---
 ## Projects
-### ### [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
+###  [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
+###  [CTF Writeups](./writeups/index.md)
 ## Certifications
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <img src="https://github.com/user-attachments/assets/7e448253-b8ce-4ab7-9217-4e7da44d9497" alt="CompTIA Security+ CE Certification" style="width: 200px; height: 200px; object-fit: cover; border:none;">
