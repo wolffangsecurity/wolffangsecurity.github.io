@@ -66,6 +66,12 @@ Bachelor of Arts in Information Science & Technology, Mercer University
   <img src="https://github.com/user-attachments/assets/c7e26ce4-34c7-40ff-b122-c0a24ca29ff9" alt="Certified Ethical Hacker"  width="250" height="250" style="margin-left: 20px;" >
 </div>
 
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/user-attachments/assets/7111b821-25e8-4f69-8768-9f8bab2eb405" alt="Junior Penetration Tester" width="250" height="250" style="margin-left: 20px;">
+  <img src="https://github.com/user-attachments/assets/145ae1e8-fdd7-4fab-9605-340c6ceae84b" alt="Certified Professional Penetration Tester"  width="250" height="250" style="margin-left: 20px;" >
+  <img src="https://github.com/user-attachments/assets/50fa0e98-f34e-4bb4-84d0-3fcb8c973240" alt="Web Application Penetration Tester"  width="250" height="250" style="margin-left: 20px;" >
+</div>
+
 <div style="display: flex; justify-content: space-around;">
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="400" height="400" style="border:none;"></iframe>
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="400" height="400" style="border:none;"></iframe>
