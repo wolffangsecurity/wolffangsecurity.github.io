@@ -1,7 +1,6 @@
 title: Sameal Con-Roma
 description: Cybersecurity Portfolio
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-hacker
-github:
-  is_project_page: false
+
