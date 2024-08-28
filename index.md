@@ -7,6 +7,8 @@ layout: default
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
 ###  [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
 
+<br />
+
 ## Professional Development
 
 ### TCM Academy
@@ -33,11 +35,14 @@ layout: default
 - Modules Completed: 175
 - Courses: Email Security, Adversary Tactics & Vulnerability Management
 
+<br />
+
 ## Education
 Master of Science in Cybersecurity & Information Assurance, Western Governors University
 
 Bachelor of Arts in Information Science & Technology, Mercer University
 
+<br />
 
 ## Certifications
 <div style="display: flex; justify-content: space-around; align-items: center;">
