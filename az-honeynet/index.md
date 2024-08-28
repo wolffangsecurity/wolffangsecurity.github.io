@@ -1,6 +1,5 @@
-## Global Threat Visualization: Azure Honeynet Mapping
-### Honeynet Analysis
-
+# Global Threat Visualization: Azure Honeynet Mapping
+## Project Description
 In this project, I deliberately configured both Windows and Linux virtual machines with intentional vulnerabilities and exposed them to the internet for 24 hours, creating a honeynet designed to attract and analyze malicious activities.
 
 These misconfigurations invited attackers from around the world, providing me with the opportunity to observe and analyze their techniques. By tracking the geographic origin of each attack, I gained valuable insights into potential threats.
