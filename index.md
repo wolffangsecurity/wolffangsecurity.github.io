@@ -15,12 +15,14 @@ layout: default
 - Mobile Application Penetration Testing
 - Open-Source Intelligence (OSINT) Fundamentals
 
-### TryHackMe
-- Ranked in the top 2% | Modules Completed: 113
+### [TryHackMe](https://tryhackme.com/p/Wcmoawq)
+- Ranked in the Top 2%
+- Modules Completed: 113
 - Courses: SOC Analyst, Jr Penetration Tester, Red Teaming
 
-### Hack The Box Academy
-- Ranked in the top 5% | Modules Completed: 176
+### [Hack The Box Academy]()
+- Ranked in the Top 5%
+- Modules Completed: 176
 - Courses: SOC Analyst, Bug Bounty Hunter, Penetration Tester
 
 ### Rangeforce
@@ -34,47 +36,7 @@ layout: default
 ## Education
 - ### Master of Science in Cybersecurity & Information Assurance, Western Governors University
 - ### Bachelor of Arts in Information Science & Technology, Mercer University
-### Tools
-- Nmap
-- Metasploit
-- Burp Suite
-- sqlmap
-- Splunk
-- Nessus
-- Wireshark
-- Hydra
-- Hashcat
-- VirusTotal
-- Metasploit
 
-### Security Skills
-- Phishing Analysis
-- Network Security
-- Endpoint Security
-- SIEM
-- Threat Intelligence
-- Digital Forensics
-- OSINT
-- Penetration Testing
-- Web Application Security
-- API Security
-- Threat Hunting
-- Incident Response
-- Vulnerability Assessment
-
-### Security Frameworks
-- NIST 800-61
-- OWASP Top 10
-- MITRE ATT&CK
-
-### Programming & Scripting Languages
-- Python
-- Powershell
-- Java
-- JavaScript
-- C
-- PHP
-- SQL
 
 ## Certifications
 <div style="display: flex; justify-content: space-around; align-items: center;">
