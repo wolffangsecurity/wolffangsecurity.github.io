@@ -19,20 +19,20 @@ layout: default
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="250" height="250" style="border:none;"></iframe>
 </div>
 
-<div style="display: flex; justify-content: center;">
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/62509156" width="250" height="250" style="border:none;"></iframe>
-  <img src="https://github.com/user-attachments/assets/f449cd28-f1b8-400d-ac99-2a939670c754" alt="AWS Certified Cloud Practitioner" width="230" height="230" style="margin-left: 20px;">
-</div>
-  
-  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-</div>
 
 ### Row 2
 <div style="display: flex; justify-content: space-around;">
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/89136967" width="250" height="250" style="border:none;"></iframe>
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/88635015" width="250" height="250" style="border:none;"></iframe>
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/87875612" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/62509156" width="250" height="250" style="border:none;"></iframe>
 </div>
+
+<div style="display: flex; justify-content: center;">
+  <img src="https://github.com/user-attachments/assets/f449cd28-f1b8-400d-ac99-2a939670c754" alt="AWS Certified Cloud Practitioner" width="230" height="230" style="margin-left: 20px;">
+</div>
+  
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
