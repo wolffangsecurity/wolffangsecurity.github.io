@@ -34,6 +34,47 @@ layout: default
 ## Education
 - ### Master of Science in Cybersecurity & Information Assurance, Western Governors University
 - ### Bachelor of Arts in Information Science & Technology, Mercer University
+### Tools
+- Nmap
+- Metasploit
+- Burp Suite
+- sqlmap
+- Splunk
+- Nessus
+- Wireshark
+- Hydra
+- Hashcat
+- VirusTotal
+- Metasploit
+
+### Security Skills
+- Phishing Analysis
+- Network Security
+- Endpoint Security
+- SIEM
+- Threat Intelligence
+- Digital Forensics
+- OSINT
+- Penetration Testing
+- Web Application Security
+- API Security
+- Threat Hunting
+- Incident Response
+- Vulnerability Assessment
+
+### Security Frameworks
+- NIST 800-61
+- OWASP Top 10
+- MITRE ATT&CK
+
+### Programming & Scripting Languages
+- Python
+- Powershell
+- Java
+- JavaScript
+- C
+- PHP
+- SQL
 
 ## Certifications
 <div style="display: flex; justify-content: space-around; align-items: center;">
