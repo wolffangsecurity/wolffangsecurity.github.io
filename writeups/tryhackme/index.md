@@ -1,4 +1,4 @@
-- [Crack the Hash](./crack-the-hash.html)
-- [Bounty Hacker](./bounty-hacker.html)
-- [LazyAdmin](./lazy-admin.html)
-- [Brute It](./brute-it.html)
+- [Crack the Hash](./crack-the-hash.md)
+- [Bounty Hacker](./bounty-hacker.md)
+- [LazyAdmin](./lazy-admin.md)
+- [Brute It](./brute-it.md)
