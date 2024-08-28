@@ -136,6 +136,11 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 ### Row 3
 <div style="display: flex; justify-content: center;">
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/62509156" width="250" height="250" style="border:none;"></iframe>
+  <div style="width: 150px; height: 270px;">
+    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="f06c3fa6-ba1c-4757-9563-c05361e433b7" data-share-badge-host="https://www.credly.com"></div>
+  </div>
+  
+  <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
 
 
