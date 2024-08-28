@@ -26,9 +26,9 @@ layout: default
 </div>
 
 <div style="display: flex; justify-content: space-around;">
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="250" height="250" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="250" height="250" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="300" height="300" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="300" height="300" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="300" height="300" style="border:none;"></iframe>
 </div>
   
   <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
