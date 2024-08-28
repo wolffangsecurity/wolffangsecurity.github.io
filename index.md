@@ -123,7 +123,7 @@ Long, single-line code blocks should not wrap. They should horizontally scroll i
 
 ### Row 1
 <div style="display: flex; justify-content: space-around;">
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="150" height="150" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/79620983" width="150" height="150" style="border:none;"></iframe>
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="150" height="150" style="border:none;"></iframe>
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="150" height="150" style="border:none;"></iframe>
 </div>
