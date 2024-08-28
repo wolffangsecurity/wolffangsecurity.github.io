@@ -1,9 +1,9 @@
-**Mossé Cyber Security Institute - Remote Internship and Certification Programs**
-
-I am currently engaged with the Mossé Cyber Security Institute (MCSI) through their Remote Internship Program and certification tracks, including Certified Penetration Tester (MPT) and System Administration Fundamentals (MSAF). These programs focus on enhancing my cybersecurity skills through hands-on training.
+# **Mossé Cyber Security Institute**
+Mossé Cyber Security Institute (MCSI) is a cybersecurity education platform that offers hands-on assignments, which are designed to be completed from scratch
+- [Track my progress by reviewing my online portfolio](https://students.mosse-institute.com/student/l00Ez0jB9hb9v39dbYTadfQwtSP2)
+- [Youtube Playlist of All Assignments](https://www.youtube.com/playlist?list=PLPcUqx2kTUOBsbdUQD3eATHiMti1gR_Zq)
 
 **Remote Internship Program:**  
-
 - Hunt for malware using YARA
 - Perform network vulnerability scans
 - Exploit vulnerabilities with Metasploit
@@ -13,25 +13,20 @@ I am currently engaged with the Mossé Cyber Security Institute (MCSI) through t
 - Assess the security settings of Windows machines and harden them
 - Write custom offensive security tools to aid Red Teaming operators
 
-
-
-Track my progress by reviewing my online portfolio:
-
 **Certified Penetration Tester (MPT):**  
-The MPT certification involves 100% practical training, requiring in-depth research and problem-solving. This course equips me with comprehensive skills in penetration testing, from exploiting vulnerabilities to developing custom attack tools.
-
-*Key Skills Developed:*
-
-- Identifying and exploiting web application and infrastructure vulnerabilities
 - Developing custom attack tools using scripting languages
+- Identifying and exploiting web application vulnerabilities
+- Identifying and exploiting infrastructure vulnerabilities
+- Identifying and exploiting memory corruption vulnerabilities
 
 **System Administration Fundamentals (MSAF):**  
-In parallel, I am pursuing the MSAF certification, which involves practical exercises in deploying and managing virtual machines, hardening systems, and managing networks.
+- Manage local and network firewalls
+- Deploy and manage virtual machines
+- Create network architecture diagrams
+- Administer and protect Unix machines
+- Harden Windows workstations and servers
+- Install backup software and recover from incidents
+- Manage Windows networks using Group Policy Objects (GPOs)
 
-*Key Skills Developed:*
 
-- Deploying and managing virtual machines
-- Hardening workstations and servers
-- Managing Windows networks and firewalls
-- Administering Unix machines and recovering from incidents
 
