@@ -23,7 +23,7 @@ layout: default
 
 <div style="display: flex; justify-content: center;">
   <img src="https://github.com/user-attachments/assets/f449cd28-f1b8-400d-ac99-2a939670c754" alt="AWS Certified Cloud Practitioner" width="230" height="230" style="margin-left: 20px;">
-  <img src="https://github.com/user-attachments/assets/ebda71a4-34ea-4b66-8bdd-c342b7d96c57" alt="Blue Team Level 1 Certification"  width="230" height="230" style="margin-left: 20px; >
+  <img src="https://github.com/user-attachments/assets/ebda71a4-34ea-4b66-8bdd-c342b7d96c57" alt="Blue Team Level 1 Certification"  width="230" height="230" style="margin-left: 20px;" >
 </div>
 
 <div style="display: flex; justify-content: space-around;">
