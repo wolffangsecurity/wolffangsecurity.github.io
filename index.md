@@ -63,6 +63,7 @@ Bachelor of Arts in Information Science & Technology, Mercer University
   <img src="https://github.com/user-attachments/assets/f449cd28-f1b8-400d-ac99-2a939670c754" alt="AWS Certified Cloud Practitioner" width="230" height="230" style="margin-left: 20px;">
   <img src="https://github.com/user-attachments/assets/ebda71a4-34ea-4b66-8bdd-c342b7d96c57" alt="Blue Team Level 1 Certification"  width="230" height="230" style="margin-left: 20px;" >
   <img src="https://github.com/user-attachments/assets/114f8e3a-4da4-440c-9ffc-6a83f6265af1" alt="Certified API Security Analyst"  width="230" height="230" style="margin-left: 20px;" >
+  <img src="https://github.com/user-attachments/assets/c7e26ce4-34c7-40ff-b122-c0a24ca29ff9" alt="Certified Ethical Hacker"  width="230" height="230" style="margin-left: 20px;" >
 </div>
 
 <div style="display: flex; justify-content: space-around;">
