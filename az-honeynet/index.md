@@ -17,34 +17,30 @@ Following this, I fortified the security of the environment and re-exposed the v
   
   <img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/1c5fec52-3a32-48ad-873e-cf197a1e56c9" alt="2024-01-06 01_22_35-windows-rdp-auth-fail - Microsoft Azure — Mozilla Firefox">
 
-
 ## Before Securing Environment
 
 The following is data collected in the insecure environment over the course of 24 hours:
 
 2024-01-05T05:52:03.5049008Z to 2024-01-06T05:52:03.5049008Z
-|Metrics| Count |
-|--|--|
-| Security Events (Windows VMs) |33486  |
-|Syslog (Linux VMs) |2715|
-| SecurityAlert (Microsoft Defender for Cloud) |3|
-| SecurityIncident (Sentinel Incidents) |186|
-| NSG Inbound Malicious Flows Allowed |2392|
 
+| Metrics | Count |
+|---------|-------|
+| Security Events (Windows VMs) | 33,486 |
+| Syslog (Linux VMs) | 2,715 |
+| SecurityAlert (Microsoft Defender for Cloud) | 3 |
+| SecurityIncident (Sentinel Incidents) | 186 |
+| NSG Inbound Malicious Flows Allowed | 2,392 |
 
-## **After Securing Environment**
+## After Securing Environment
 
 The following is data collected after hardening the environment over the next 24 hours:
 
 2024-01-08T18:37:19.9634111Z to 2024-01-09T18:37:19.9634111Z
 
-|Metrics| Count |
-|--|--|
-| Security Events (Windows VMs) |11548|
-|Syslog (Linux VMs) |0|
-| SecurityAlert (Microsoft Defender for Cloud) |0|
-| SecurityIncident (Sentinel Incidents) |0|
-| NSG Inbound Malicious Flows Allowed |0|
-
-
-
+| Metrics | Count |
+|---------|-------|
+| Security Events (Windows VMs) | 11,548 |
+| Syslog (Linux VMs) | 0 |
+| SecurityAlert (Microsoft Defender for Cloud) | 0 |
+| SecurityIncident (Sentinel Incidents) | 0 |
+| NSG Inbound Malicious Flows Allowed | 0 |
