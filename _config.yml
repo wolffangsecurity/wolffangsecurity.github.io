@@ -3,3 +3,5 @@ description: Cybersecurity Portfolio
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-hacker
+github:
+  is_project_page: false
