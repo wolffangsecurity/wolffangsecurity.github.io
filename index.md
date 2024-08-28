@@ -6,9 +6,35 @@ layout: default
 ###  [CTF Writeups](./writeups/index.md)
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
 ###  [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
+
+## Professional Development
+
+### TCM Academy
+- Practical Phishing Campaigns
+- Security Operations (SOC) 101
+- Mobile Application Penetration Testing
+- Open-Source Intelligence (OSINT) Fundamentals
+
+### TryHackMe
+- Ranked in the top 2% | Modules Completed: 113
+- Courses: SOC Analyst, Jr Penetration Tester, Red Teaming
+
+### Hack The Box Academy
+- Ranked in the top 5% | Modules Completed: 176
+- Courses: SOC Analyst, Bug Bounty Hunter, Penetration Tester
+
+### Rangeforce
+- Modules Completed: 121
+- Courses: Cloud Security, Web Application Security
+
+### Level Effect
+- Modules Completed: 175
+- Courses: Email Security, Adversary Tactics & Vulnerability Management
+
 ## Education
-- Master of Science in Cybersecurity & Information Assurance, Western Governors University
-- Bachelor of Arts in Information Science & Technology, Mercer University
+- ### Master of Science in Cybersecurity & Information Assurance, Western Governors University
+- ### Bachelor of Arts in Information Science & Technology, Mercer University
+
 ## Certifications
 <div style="display: flex; justify-content: space-around; align-items: center;">
   <img src="https://github.com/user-attachments/assets/7e448253-b8ce-4ab7-9217-4e7da44d9497" alt="CompTIA Security+ CE Certification" style="width: 200px; height: 200px; object-fit: cover; border:none;">
