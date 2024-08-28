@@ -46,24 +46,4 @@ The following is data collected after hardening the environment over the next 24
 | NSG Inbound Malicious Flows Allowed |0|
 
 
----------------
-### SOC Operations: Azure Sentinel
-
- I also configured Azure Sentinel with custom detection rules to trigger alerts for malicious activities, such as brute force attempts. Acting as a SOC Analyst, I investigated these alerts within Sentinel  to practice the incident response lifecycle and get experience with detection engineering
- 
-<img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/8e59c704-4404-44e2-88d1-c36d99953b96" alt="2024-01-06 11_16_37-BEFORE AND AFTER xlsx - Excel"></p>
-
-<img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/69369069-03be-455d-b3a7-c9246dc47849" alt="Pasted image 20240106112059">
- 
- <img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/71dff6b4-06b4-4821-ad64-a93c1a3e7d21" alt="Pasted image 20240106112720"></p>
-
-<img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/8761ff89-4fec-4c90-93b6-4ebafbe0d85f" alt="Pasted image 20240106112248">
-<img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/8e5c5a3c-608a-4383-a95f-440faa07109a" alt="Pasted image 20240106112856">
-
-<img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/f6b1cf62-77d3-4f8f-8119-c24a3929e877" alt="Pasted image 20240106113424">
-    <p><img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/753ddb06-a067-4a0c-a667-9f4de5beadd2" alt="Pasted image 20240106115039"></p>
-    <p><img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/a0e38e59-8175-4dc1-b684-86b55e1dcacb" alt="Pasted image 20240106113638"></p>
-    <p><img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/7a0d09e3-b9fe-400b-b339-57eb0fc7674a" alt="Pasted image 20240106114503"></p>
-    <p><img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/b6d1517c-b64c-41eb-bb3c-b6a4ef53c279" alt="Pasted image 20240106140510"></p>
-    <p><img src="https://github.com/paRaade/Global-Threat-Visualization-Azure-Honeynet-Mapping/assets/126734769/bb3ce11e-a5a5-4252-99be-7c4d795fe8ed" alt="Pasted image 20240106142844"></p>
 
