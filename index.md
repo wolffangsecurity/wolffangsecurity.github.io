@@ -34,8 +34,9 @@ layout: default
 - Courses: Email Security, Adversary Tactics & Vulnerability Management
 
 ## Education
-- ### Master of Science in Cybersecurity & Information Assurance, Western Governors University
-- ### Bachelor of Arts in Information Science & Technology, Mercer University
+Master of Science in Cybersecurity & Information Assurance, Western Governors University
+
+Bachelor of Arts in Information Science & Technology, Mercer University
 
 
 ## Certifications
