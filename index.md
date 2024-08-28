@@ -1,6 +1,7 @@
 ---
 layout: default 
 ---
+
 ## Projects
 ###  [CTF Writeups](./writeups/index.md)
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
