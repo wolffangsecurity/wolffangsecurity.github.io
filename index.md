@@ -6,17 +6,11 @@ layout: default
 ### Row 1
 <div style="display: flex; justify-content: space-around;">
   <img src="https://github.com/user-attachments/assets/0340361e-7e40-4912-821c-4b3eb6d6fc6a" alt="CompTIA Security+ CE Certification" width="200" height="200" style="border:none;">
-  <img src="https://github.com/user-attachments/assets/f7e7b882-cc03-4c6e-9d48-ac41bcd7b8c1" alt="CompTIA CySA+ CE Certification" width="200" height="200" style="border:none;">
-  <img src="https://github.com/user-attachments/assets/584a9473-eb65-4e64-b7f2-af8a46dfcd4f" alt="CompTIA PenTest+ CE Certification" width="200" height="200" style="border:none;">
+  <img src="https://github.com/user-attachments/assets/07bfa185-b5e6-4035-bc41-d2c5260b4c55" alt="CompTIA CySA+ CE Certification" width="200" height="200" style="border:none;">
+  <img src="https://github.com/user-attachments/assets/e0e68578-d17b-45a9-939a-9648a6e7160a" alt="CompTIA PenTest+ CE Certification" width="200" height="200" style="border:none;">
 </div>
 
 
-  
-<div style="display: flex; justify-content: space-around;">
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="250" height="250" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="250" height="250" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="250" height="250" style="border:none;"></iframe>
-</div>
 
 ### Row 2
 <div style="display: flex; justify-content: space-around;">
@@ -33,7 +27,11 @@ layout: default
   
   <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
 </div>
-
+<div style="display: flex; justify-content: space-around;">
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="250" height="250" style="border:none;"></iframe>
+</div>
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](./another-page.html).
