@@ -24,11 +24,12 @@ layout: default
 <div style="display: flex; justify-content: center;">
   <img src="https://github.com/user-attachments/assets/f449cd28-f1b8-400d-ac99-2a939670c754" alt="AWS Certified Cloud Practitioner" width="230" height="230" style="margin-left: 20px;">
   <img src="https://github.com/user-attachments/assets/ebda71a4-34ea-4b66-8bdd-c342b7d96c57" alt="Blue Team Level 1 Certification"  width="230" height="230" style="margin-left: 20px; >
+</div>
 
 <div style="display: flex; justify-content: space-around;">
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="300" height="300" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="300" height="300" style="border:none;"></iframe>
-  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="300" height="300" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79620983" width="400" height="400" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79660229" width="400" height="400" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/79626695" width="400" height="400" style="border:none;"></iframe>
 </div>
   
   <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
