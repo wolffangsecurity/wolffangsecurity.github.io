@@ -46,9 +46,9 @@ layout: default
 
   
 ### [Rangeforce](./profdev/Rangeforce.pdf)
-- Modules Completed: 106
 - Cloud Security
 - Web Application Security
+- Modules Completed: 106
 
 
 ### APISEC University
