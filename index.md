@@ -23,22 +23,36 @@ layout: default
 
 
 ### [TryHackMe](https://tryhackme.com/p/Wcmoawq)
+- SOC Analyst
+- Red Teaming
 - Ranked in the Top 2%
 - Modules Completed: 113
-- Courses: SOC Analyst, Jr Penetration Tester, Red Teaming
+
 
 ### [Hack The Box Academy](./profdev/HTBAcademy.pdf)
+- SOC Analyst
+- Bug Bounty Hunter
+- Penetration Tester
 - Ranked in the Top 5%
 - Modules Completed: 176
-- Courses: SOC Analyst, Bug Bounty Hunter, Penetration Tester
+
 
 ### [Rangeforce](./profdev/Rangeforce.pdf)
 - Modules Completed: 106
-- Courses: Cloud Security, Web Application Security
+- Cloud Security
+- Web Application Security
 
 ### Level Effect
+- Email Security
 - Modules Completed: 175
-- Courses: Email Security, Adversary Tactics & Vulnerability Management
+
+### APISEC University
+- Securing API Servers
+- API Penetration Testing
+- API Security for PCI Compliance
+- OWASP API Security Top 10 and Beyond!
+
+
 
 <br />
 
