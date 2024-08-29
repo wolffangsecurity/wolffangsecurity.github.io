@@ -4,6 +4,7 @@ layout: default
        
 ## Projects
 ### [CTF Writeups](./writeups/index.md)
+### [Phishing Simulator]()
 ### [Bug Bounty Hunting](./bounty/index.md)
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
 ### [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
