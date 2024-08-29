@@ -12,10 +12,15 @@ layout: default
 ## Professional Development
 
 ### TCM Academy
+- Practical API Hacking
+- Practical Windows Forensics
 - Practical Phishing Campaigns
 - Security Operations (SOC) 101
+- Practical Malware Analysis & Triage
 - Mobile Application Penetration Testing
+- The Definitive GRC Analyst Master Class
 - Open-Source Intelligence (OSINT) Fundamentals
+
 
 ### [TryHackMe](https://tryhackme.com/p/Wcmoawq)
 - Ranked in the Top 2%
