@@ -38,15 +38,18 @@ layout: default
 - Ranked in the Top 5%
 - Modules Completed: 176
 
+### [CyberWarFare Labs]()
+- Purple Teaming Fundamentals
+- Multi-Cloud Red Team Analyst
+- Certified Cyber Security Analyst
+- Certified Red Team Infrastructure Developer
 
+  
 ### [Rangeforce](./profdev/Rangeforce.pdf)
 - Modules Completed: 106
 - Cloud Security
 - Web Application Security
 
-### Level Effect
-- Email Security
-- Modules Completed: 175
 
 ### APISEC University
 - Securing API Servers
