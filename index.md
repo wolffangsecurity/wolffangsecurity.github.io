@@ -42,7 +42,6 @@ layout: default
 ### [CyberWarFare Labs]()
 - Purple Teaming Fundamentals
 - Multi-Cloud Red Team Analyst
-- Blue Team Fundamentals (BTF)
 - Certified Cyber Security Analyst
 - Certified Red Team – CredOps Infiltrator
 - Certified Red Team Infrastructure Developer
