@@ -54,6 +54,7 @@ layout: default
 
 
 ### APISEC University
+- API Authentication
 - Securing API Servers
 - API Penetration Testing
 - API Security for PCI Compliance
