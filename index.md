@@ -7,6 +7,7 @@ layout: default
 ### [Phishing Simulator]()
 ### [Bug Bounty Hunting](./bounty/index.md)
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
+### [Red Team Infrastructure Development and Automation]()
 ### [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
 
 <br />
