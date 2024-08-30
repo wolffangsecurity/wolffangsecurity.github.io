@@ -14,6 +14,7 @@ layout: default
 ## Professional Development
 
 ### TCM Academy
+- Rust 101
 - Practical API Hacking
 - Practical Windows Forensics
 - Practical Phishing Campaigns
