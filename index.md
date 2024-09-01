@@ -41,6 +41,7 @@ layout: default
 - Modules Completed: 176
 
 ### [CyberWarFare Labs]()
+- Blue Team Fundamentals
 - Purple Teaming Fundamentals
 - Multi-Cloud Red Team Analyst
 - Certified Cyber Security Analyst
