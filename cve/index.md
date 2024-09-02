@@ -1,4 +1,4 @@
-## Public CVE Disclosures
+# Public CVE Disclosures
 
 ### CVE-2024-XXXX: [Vulnerability Name]
 - **Description**: Briefly describe the vulnerability, its impact, and how it was discovered.
