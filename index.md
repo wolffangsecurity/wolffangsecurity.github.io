@@ -2,9 +2,9 @@
 layout: default 
 ---
 ## Public CVE Disclosures
-### CVE-2024-XXXX:[Vulnerability Name]
-### CVE-2024-XXXX:[Vulnerability Name]
-### CVE-2024-XXXX:[Vulnerability Name]
+### CVE-2024-XXXX: [Vulnerability Name]
+### CVE-2024-XXXX: [Vulnerability Name]
+### CVE-2024-XXXX: [Vulnerability Name]
 
 
 <br />
