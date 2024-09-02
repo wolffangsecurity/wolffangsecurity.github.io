@@ -1,7 +1,14 @@
 ---
 layout: default 
 ---
-       
+## Public CVE Disclosures
+### CVE-2024-XXXX:[Vulnerability Name]
+### CVE-2024-XXXX:[Vulnerability Name]
+### CVE-2024-XXXX:[Vulnerability Name]
+
+
+<br />
+
 ## Projects
 ### [CTF Writeups](./writeups/index.md)
 ### [Phishing Campaign]()
@@ -72,9 +79,9 @@ layout: default
 <br />
 
 ## Education
-#### Master of Science in Cybersecurity & Information Assurance, Western Governors University
+### Master of Science in Cybersecurity & Information Assurance, Western Governors University
 
-#### Bachelor of Arts in Information Science & Technology, Mercer University
+### Bachelor of Arts in Information Science & Technology, Mercer University
 
 <br />
 
