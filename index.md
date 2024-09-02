@@ -10,9 +10,9 @@ layout: default
 ### [Phishing Campaign]()
 ### [Bug Bounty Hunting](./bounty/index.md)
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
-### [Security Monitoring and Penetration Testing Lab]()
+### [Security Monitoring and Penetration Testing Lab](./monitoring/index.md)
 ### [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
-### [Red Team Infrastructure Development and Automation]()
+### [Red Team Infrastructure Development and Automation](./redteaminfra/index.md)
 
 <br />
 
