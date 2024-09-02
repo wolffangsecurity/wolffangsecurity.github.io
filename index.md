@@ -1,11 +1,7 @@
 ---
 layout: default 
 ---
-## Public CVE Disclosures
-### CVE-2024-XXXX: [Vulnerability Name]
-### CVE-2024-XXXX: [Vulnerability Name]
-### CVE-2024-XXXX: [Vulnerability Name]
-
+## [Public CVE Disclosures](cve/index.md)
 
 <br />
 
