@@ -48,7 +48,6 @@ layout: default
 - Blue Team Fundamentals
 - Purple Teaming Fundamentals
 - Multi-Cloud Red Team Analyst
-- Certified Cyber Security Analyst
 - Certified Red Team – CredOps Infiltrator
 - Certified Red Team Infrastructure Developer
 
