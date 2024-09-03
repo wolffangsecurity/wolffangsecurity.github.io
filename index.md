@@ -42,7 +42,7 @@ layout: default
 - Bug Bounty Hunter
 - Penetration Tester
 - Ranked in the Top 5%
-- Modules Completed: 176
+
 
 ### [CyberWarFare Labs]()
 - Blue Team Fundamentals
