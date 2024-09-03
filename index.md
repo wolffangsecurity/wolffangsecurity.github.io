@@ -54,8 +54,11 @@ layout: default
   
 ### [Rangeforce](./profdev/Rangeforce.pdf)
 - Cloud Security
+- Offensive Security
 - Web Application Security
 - Modules Completed: 106
+- Security Operations and Incident Response
+- Threat Intelligence and Vulnerability Management
 
 
 ### APISEC University
