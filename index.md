@@ -60,10 +60,8 @@ layout: default
 
 
 ### APISEC University
-- Securing API Servers
 - API Security for PCI Compliance
 - OWASP API Security Top 10 and Beyond!
-- API Security for Connected Cars and Fleets
 
 ###  Safer Internet Project 
 -  Purple Team
