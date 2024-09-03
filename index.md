@@ -55,7 +55,6 @@ layout: default
 - Cloud Security
 - Offensive Security
 - Web Application Security
-- Modules Completed: 106
 - Security Operations and Incident Response
 - Threat Intelligence and Vulnerability Management
 
@@ -67,9 +66,10 @@ layout: default
 - API Security for Connected Cars and Fleets
 
 ###  Safer Internet Project 
+-  Purple Team
 -  Offensive Security
 -  Defensive Security
--  Purple Team
+
 
 ### [MobileHackingLab]()
 - Android Application Security Fundamentals
