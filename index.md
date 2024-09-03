@@ -61,9 +61,7 @@ layout: default
 
 
 ### APISEC University
-- API Authentication
 - Securing API Servers
-- API Penetration Testing
 - API Security for PCI Compliance
 - OWASP API Security Top 10 and Beyond!
 - API Security for Connected Cars and Fleets
