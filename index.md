@@ -69,8 +69,14 @@ layout: default
 - OWASP API Security Top 10 and Beyond!
 - API Security for Connected Cars and Fleets
 
+###  Safer Internet Project 
+-  Offensive Security
+-  Defensive Security
+-  Purple Team
+
 ### [MobileHackingLab]()
 - Android Application Security Fundamentals
+
 
 
 <br />
