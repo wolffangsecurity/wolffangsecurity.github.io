@@ -1,7 +1,6 @@
 ---
 layout: default 
 ---
-## [Public CVE Disclosures](cve/index.md)
 
 <br />
 
