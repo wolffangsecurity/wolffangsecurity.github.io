@@ -40,7 +40,7 @@ layout: default
 - Ranked in the Top 5%
 
 
-### [CyberWarFare Labs]()
+### CyberWarFare Labs
 - Blue Team Fundamentals
 - Purple Teaming Fundamentals
 - Multi-Cloud Red Team Analyst
@@ -60,7 +60,7 @@ layout: default
 - OWASP API Security Top 10 and Beyond!
 
 
-### [MobileHackingLab]()
+### MobileHackingLab
 - Android Application Security Fundamentals
 
 
