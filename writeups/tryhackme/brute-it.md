@@ -4,7 +4,7 @@
 <li><strong>nmap</strong>:  tool to find open ports, detect operating systems and discover potential vulnerabilities </li>
 <li><strong>gowitness</strong>: command line tool written in Go to capture and screenshot web pages</li>
 <li><strong>ffuf</strong>: web fuzzer written in Go to discover hidden or unlinked resources on a web server </li>
-<li><strong>metasploit</strong>:framework for developing, testing, and executing exploits on target systems.<ul>
+<li><strong>metasploit</strong>:framework for developing, testing, and executing exploits on target systems.</li>
 <li><strong>ssh2john</strong>: used for extracting password hashes from the OpenSSH private key files.</li>
 <li><strong>john the ripper</strong>: password cracking software</li>
 <li><strong>burp suite pro:</strong> web application security testing platform</li>
