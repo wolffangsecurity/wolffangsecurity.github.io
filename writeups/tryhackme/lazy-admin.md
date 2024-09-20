@@ -7,7 +7,7 @@
 <li><strong>metasploit</strong>:framework for developing, testing, and executing exploits on target systems.</li>
 <li><strong>msfvenom</strong>: Payload generator and encoder within the Metasploit Framework for creating custom malicious payloads.</li>
 <li><strong>searchsploit</strong>: A command-line utility that interfaces with the Exploit Database (ExploitDB) .</li>
-<li><strong>netcat</strong>:  Versatile networking utility for reading from and writing to network connections, often used for port scanning and transferring files.<ul>
+<li><strong>netcat</strong>:  Versatile networking utility for reading from and writing to network connections, often used for port scanning and transferring files.</li>
 <li><strong>crackstation</strong>: an online platform that stores hashed passwords and provides other password cracking services</li>
 </ul>
 </li>
