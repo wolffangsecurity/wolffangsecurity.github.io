@@ -1,5 +1,12 @@
 <p>Lab: <a href="https://tryhackme.com/room/crackthehash">Crack the hash</a></p>
-<p>Tools: hashID, hashcat, John the Ripper, rockyou.txt, OneRuleToRuleThemAll.rule</p>
+Tools: 
+  <li>hashID</li> 
+  <li>hashcat</li>
+  <li>John the Ripper</li>
+  <li>Wordlist: rockyou.txt</li> 
+  <li>Rule list: OneRuleToRuleThemAll.rule</li>
+  <br />
+  
 <p>All of these hashes can be cracked with the online tools: <a href="https://crackstation.net/">crackstation</a> and <a href="https://hashes.com/en/decrypt/hash">hashes.com</a>.</p>
 <p><img src="https://github.com/paRaade/CTF-Writeups/assets/126734769/f2bd69e8-19a5-4042-b796-b179e7ee4766" alt="Pasted image 20240124204447">
 <img src="https://github.com/paRaade/CTF-Writeups/assets/126734769/ac272b71-67a6-4aa4-9dea-5bbe9c63d227" alt="Pasted image 20240124215425">
