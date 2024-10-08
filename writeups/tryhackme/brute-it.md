@@ -10,8 +10,7 @@
 <li><strong>burp suite pro:</strong> web application security testing platform</li>
 <li><strong>foxy proxy:</strong> browser extension that allows users to easily switch between different proxy configurations</li>
 </ul>
-</li>
-</ul>
+
 <p>After connecting to the network through TryHackMe&#39;s VPN. I want to make sure the target is reachable.</p>
 <pre><code>└─<span class="hljs-comment"># ping -c 5 10.10.58.60   </span>
 PING <span class="hljs-number">10.10</span><span class="hljs-number">.58</span><span class="hljs-number">.60</span> (<span class="hljs-number">10.10</span><span class="hljs-number">.58</span><span class="hljs-number">.60</span>) <span class="hljs-number">56</span>(<span class="hljs-number">84</span>) <span class="hljs-keyword">bytes</span> <span class="hljs-keyword">of</span> data.
