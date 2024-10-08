@@ -27,7 +27,6 @@ layout: default
 - Ranked in the Top 2%
 - Modules Completed: 113
 
-
 ### [Hack The Box Academy](./profdev/HTBAcademy.pdf)
 - SOC Analyst
 - Bug Bounty Hunter
