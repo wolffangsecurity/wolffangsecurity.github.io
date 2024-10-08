@@ -83,6 +83,7 @@ layout: default
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/117663757" width="250" height="250" style="border:none;"></iframe>
 </div>
 
+
 <div style="display: flex; justify-content: center;">
   <img src="https://github.com/user-attachments/assets/f449cd28-f1b8-400d-ac99-2a939670c754" alt="AWS Certified Cloud Practitioner" width="250" height="250" style="margin-left: 20px;">
   <img src="https://github.com/user-attachments/assets/ebda71a4-34ea-4b66-8bdd-c342b7d96c57" alt="Blue Team Level 1 Certification"  width="250" height="250" style="margin-left: 20px;" >
