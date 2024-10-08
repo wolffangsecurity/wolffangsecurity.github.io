@@ -15,14 +15,9 @@ layout: default
 ## Professional Development
 
 ### TCM Academy
-- Rust 101
 - Practical API Hacking
-- Practical Windows Forensics
 - Practical Phishing Campaigns
-- Security Operations (SOC) 101
-- Practical Malware Analysis & Triage
 - Mobile Application Penetration Testing
-- The Definitive GRC Analyst Master Class
 - Open-Source Intelligence (OSINT) Fundamentals
 
 
@@ -63,8 +58,6 @@ layout: default
 ### MobileHackingLab
 - Android Application Security Fundamentals
 
-
-
 <br />
 
 ## Education
@@ -87,6 +80,7 @@ layout: default
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/88635015" width="250" height="250" style="border:none;"></iframe>
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/87875612" width="250" height="250" style="border:none;"></iframe>
   <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/62509156" width="250" height="250" style="border:none;"></iframe>
+  <iframe src="https://api.accredible.com/v1/frontend/credential_website_embed_image/badge/117663757" width="250" height="250" style="border:none;"></iframe>
 </div>
 
 <div style="display: flex; justify-content: center;">
