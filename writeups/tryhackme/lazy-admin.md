@@ -10,8 +10,7 @@
 <li><strong>netcat</strong>:  Versatile networking utility for reading from and writing to network connections, often used for port scanning and transferring files.</li>
 <li><strong>crackstation</strong>: an online platform that stores hashed passwords and provides other password cracking services</li>
 </ul>
-</li>
-</ul>
+
 <p>After connecting to the network through TryHackMe&#39;s VPN. I want to make sure the target is reachable.</p>
 <pre><code>ping -c <span class="hljs-number">5</span> <span class="hljs-number">10.10</span><span class="hljs-number">.198</span><span class="hljs-number">.128</span>  
 PING <span class="hljs-number">10.10</span><span class="hljs-number">.198</span><span class="hljs-number">.128</span> (<span class="hljs-number">10.10</span><span class="hljs-number">.198</span><span class="hljs-number">.128</span>) <span class="hljs-number">56</span>(<span class="hljs-number">84</span>) <span class="hljs-keyword">bytes</span> <span class="hljs-keyword">of</span> data.
