@@ -8,7 +8,7 @@ layout: default
 ### [CTF Writeups](./writeups/index.md)
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
 ### [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
-### [Red Team Infrastructure Development and Automation](./redteaminfra/index.md)(In Progress)
+
 
 <br />
 
@@ -73,9 +73,9 @@ layout: default
 | CompTIA CySA+                                    | CompTIA Cloud+                                 |
 | CompTIA Pentest+                                 | CompTIA Security+                              |
 | Blue Team Level 1 (BTL1)                         | Certified Ethical Hacker (CEH)                 |
-| Junior Penetration Tester (eJPT)                 | Practical Junior Web Tester (PJWT)             |
-| AWS Certified Cloud Practitioner                 | Practical Junior Mobile Tester (PJMT)          |
-| Certified API Security Analyst (CASA)            | Practical Web Penetration Tester (PWPT)        |
+| Junior Penetration Tester (eJPT)                 | Practical Web Pentest Associate (PWPA)         |
+| AWS Certified Cloud Practitioner                 | Practical Mobile Pentest Associate (PMPA)      |
+| Certified API Security Analyst (CASA)            | Practical Web Pentest Professional (PWPP)      |
 | Web Application Penetration Tester (eWPT)        | Practical Junior Penetration Tester (PJPT)     |
 | Practical Network Penetration Tester (PNPT)      | Certified Professional Penetration Tester (eCPPT) |
 
