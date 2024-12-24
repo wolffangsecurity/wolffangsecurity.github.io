@@ -8,7 +8,7 @@ layout: default
 ### [CTF Writeups](./writeups/index.md)
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
 ### [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
-
+### [STIG Compliance Remediation](./stig/index.md)
 
 <br />
 
