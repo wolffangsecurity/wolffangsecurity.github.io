@@ -34,8 +34,8 @@ A collection of scripts and configurations to remediate common misconfigurations
 - WN10-AU-000115  
 - WN10-AU-000120  
 - WN10-AU-000150  
-- [WN10-AU-000500](stig/windows/WN10-AU-000500.md)  
-- [WN10-AU-000505](windows/WN10-AU-000505.ps1)  
+- [WN10-AU-000500](./windows/WN10-AU-000500.md)  
+- [WN10-AU-000505](./windows/WN10-AU-000505.md)  
 - WN10-AU-000510  
 - WN10-AU-000555  
 - WN10-AU-000560  
@@ -58,7 +58,7 @@ A collection of scripts and configurations to remediate common misconfigurations
 - WN10-CC-000044  
 - WN10-CC-000052  
 - WN10-CC-000060  
-- [WN10-CC-000065](windows/WN10-CC-000065.ps1)  
+- [WN10-CC-000065](./windows/WN10-CC-000065.md)  
 - WN10-CC-000068  
 - WN10-CC-000085  
 - WN10-CC-000090  
@@ -85,7 +85,7 @@ A collection of scripts and configurations to remediate common misconfigurations
 - WN10-CC-000230  
 - WN10-CC-000235  
 - WN10-CC-000238  
-- [WN10-CC-000245](windows/WN10-CC-000245.ps1)  
+- [WN10-CC-000245](./windows/WN10-CC-000245.md)  
 - WN10-CC-000250  
 - WN10-CC-000252  
 - WN10-CC-000255  
@@ -97,12 +97,12 @@ A collection of scripts and configurations to remediate common misconfigurations
 - WN10-CC-000290  
 - WN10-CC-000295  
 - WN10-CC-000305  
-- [WN10-CC-000310](windows/WN10-CC-000310.ps1)  
+- [WN10-CC-000310](./windows/WN10-CC-000310.md)  
 - WN10-CC-000315  
 - WN10-CC-000325  
 - WN10-CC-000326  
 - WN10-CC-000327  
-- [WN10-CC-000330](windows/WN10-CC-000330.ps1)  
+- [WN10-CC-000330](./windows/WN10-CC-000330.md)  
 - WN10-CC-000335  
 - WN10-CC-000345  
 - WN10-CC-000350  
