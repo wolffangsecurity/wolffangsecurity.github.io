@@ -4,9 +4,9 @@ A collection of scripts and configurations to remediate common misconfigurations
 
 ## Windows STIGs
 - [WN10-00-000031](./windows/WN10-00-000031.md)  
-- WN10-00-000032  
+- [WN10-00-000032](./windows/WN10-00-000032.md)
 - WN10-00-000107  
-- WN10-00-000145  
+- [WN10-00-000145](./windows/WN10-00-000145.md)  
 - WN10-00-000150  
 - WN10-00-000155  
 - WN10-00-000175  
