@@ -1,20 +1,14 @@
-# Public CVE Disclosures
+# CVE Publications
 
-## [Public CVE Disclosures](cve/index.md)
+### CVE-2025-57244: Stored XSS in OpenKM
+- **Description**: OpenKM Community Edition 6.3.12 is vulnerable to stored cross-site
+scripting (XSS) in the user account creation interface. The Name field
+accepts script tags and the Email field is vulnerable when the POST
+request is modified to include encoded script tags, by passing frontend
+validation.
+- **Affected Software**: Openkm Community Edition Version: 6.3.12
+- Reference Link: https://www.cve.org/CVERecord?id=CVE-2025-57244  
 
-### CVE-2024-XXXX: [Vulnerability Name]
-- **Description**: Briefly describe the vulnerability, its impact, and how it was discovered.
-- **Affected Software**: List the software versions affected by the vulnerability.
-- **Published Date**: [YYYY-MM-DD]
-- **CVSS Score**: [Score/10]
-- **Mitigation**: Describe any steps to mitigate or patch the vulnerability.
-- **Reference Link**: [Link to CVE details or advisory]
 
-### CVE-2023-YYYY: [Vulnerability Name]
-- **Description**: Briefly describe the vulnerability, its impact, and how it was discovered.
-- **Affected Software**: List the software versions affected by the vulnerability.
-- **Published Date**: [YYYY-MM-DD]
-- **CVSS Score**: [Score/10]
-- **Mitigation**: Describe any steps to mitigate or patch the vulnerability.
-- **Reference Link**: [Link to CVE details or advisory]
+
 
