@@ -73,9 +73,11 @@ layout: default
 | CompTIA CySA+                                    | CompTIA Cloud+                                 |
 | CompTIA Pentest+                                 | CompTIA Security+                              |
 | Blue Team Level 1 (BTL1)                         | Certified Ethical Hacker (CEH)                 |
+| Security Analyst Level 1 (SAL1)                  | Certified Network Pentester (CNPen)            |
 | Junior Penetration Tester (eJPT)                 | Practical Web Pentest Associate (PWPA)         |
 | AWS Certified Cloud Practitioner                 | Practical Mobile Pentest Associate (PMPA)      |
 | Certified API Security Analyst (CASA)            | Practical Web Pentest Professional (PWPP)      |
 | Web Application Penetration Tester (eWPT)        | Practical Junior Penetration Tester (PJPT)     |
 | Practical Network Penetration Tester (PNPT)      | Certified Professional Penetration Tester (eCPPT) |
+| Mobile Application Penetration Tester (eMAPT)      | Web Application Penetration Tester eXtreme (eWPTX)|
 
