@@ -1,6 +1,6 @@
 # CVE Publications
 
-### [CVE-2025-57244](./CVE-2025-57244.md): Stored XSS in OpenKM
+### [CVE-2025-57244](./CVE-2025-57244): Stored XSS in OpenKM
 - **Description**: OpenKM Community Edition 6.3.12 is vulnerable to stored cross-site
 scripting (XSS) in the user account creation interface. The Name field
 accepts script tags and the Email field is vulnerable when the POST
