@@ -7,7 +7,7 @@ accepts script tags and the Email field is vulnerable when the POST
 request is modified to include encoded script tags, by passing frontend
 validation.
 - **Affected Software**: Openkm Community Edition Version: 6.3.12
-- **Reference Link**: https://www.cve.org/CVERecord?id=CVE-2025-57244  
+- **Reference Link**: [https://www.cve.org/CVERecord?id=CVE-2025-57244](https://www.cve.org/CVERecord?id=CVE-2025-57244)
 
 
 
