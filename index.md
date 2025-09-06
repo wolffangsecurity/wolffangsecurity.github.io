@@ -9,7 +9,7 @@ layout: default
 ### [Mossé Cyber Security Institute](./mcsi/index.md)
 ### [Global Threat Visualization: Azure Honeynet Mapping](./az-honeynet/index.md)
 ### [STIG Compliance Remediation](./stig/index.md)
-
+### [CVE Publications](./cve/index.md)
 <br />
 
 ## Professional Development
