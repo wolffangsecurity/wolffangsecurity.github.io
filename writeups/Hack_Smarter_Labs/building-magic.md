@@ -92,6 +92,7 @@ Host script results:
 
 ## Hashes From the DB Leak
 - Using the tool hashid I determined that the mashes were likely MD5
+
 ```
 hashid c4a21c4d438819d73d24851e7966229c       
 Analyzing 'c4a21c4d438819d73d24851e7966229c'
@@ -113,11 +114,12 @@ Analyzing 'c4a21c4d438819d73d24851e7966229c'
 [+] Domain Cached Credentials 2 
 [+] DNSSEC(NSEC3) 
 [+] RAdmin v2.x 
-
 ```
  
 
 - Using  [crackstation](https://crackstation.net/) I was able to get two of the hashes in plaintetxt
+
+  
 ```
 c4a21c4d438819d73d24851e7966229c
 61ee643c5043eadbcdc6c9d1e3ebd298
@@ -130,6 +132,7 @@ dd4137bab3b52b55f99f18b7cd595448
 bfaf794a81438488e57ee3954c27cd75
 47d23284395f618bea1959e710bc68ef
 ```
+
  - Site like can be used
 <img width="1016" height="609" alt="image" src="https://github.com/user-attachments/assets/29ead5d8-91cc-41a4-95cf-a1335592ebfc" />
 
