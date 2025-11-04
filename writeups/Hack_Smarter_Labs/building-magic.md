@@ -2,7 +2,7 @@
 
 The following information was provided before starting the lab
 
-These entries need to be added to the `/etc/hosts` file
+These entries need to be added to the `/etc/hosts` file 
 - `buildingmagic.local`
 - `dc01.buildingmagic.local`
 
