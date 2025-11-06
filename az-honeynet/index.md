@@ -1,4 +1,4 @@
-# Global Threat Visualization: Azure Honeynet Mapping
+# Threat Visualization: Azure Honeynet Mapping
 ## Project Description
 In this project, I exposed a Windows and a Linux virtual machine with to the internet for 24 hours, creating a honeynet designed to attract and analyze malicious activities.
 
@@ -43,3 +43,4 @@ The following is data collected after hardening the environment over the next 24
 | SecurityAlert (Microsoft Defender for Cloud) | 0 |
 | SecurityIncident (Sentinel Incidents) | 0 |
 | NSG Inbound Malicious Flows Allowed | 0 |
+
