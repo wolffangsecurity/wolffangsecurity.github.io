@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Burger • Cybersecurity Portfolio</title>
+  <meta name="description" content="Cybersecurity portfolio: education, work history, certifications, CVE publications, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <script>
+    // Simple theme toggle with localStorage
+    const setTheme = (mode) => {
+      if (mode === 'dark') document.documentElement.classList.add('dark');
+      else document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', mode);
+    };
+    const initTheme = () => {
+      const saved = localStorage.getItem('theme');
+      if (saved) setTheme(saved);
+      else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+    };
+    document.addEventListener('DOMContentLoaded', initTheme);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Burger",
+    "jobTitle": "Security Researcher / Penetration Tester",
+    "url": "https://<your-username>.github.io/",
+    "sameAs": [
+      "https://github.com/<your-username>",
+      "https://www.linkedin.com/in/<your-linkedin>"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-slate-900/70 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6">
+      <div class="flex items-center justify-between py-3">
+        <a href="#top" class="font-bold tracking-tight text-lg">Burger</a>
+        <nav class="hidden sm:flex gap-6 text-sm">
+          <!-- <a href="#about" class="hover:opacity-80">About</a> -->
+          <a href="#education" class="hover:opacity-80">Education</a>
+          <a href="#experience" class="hover:opacity-80">Work</a>
+          <a href="#certs" class="hover:opacity-80">Certifications</a>
+          <a href="#projects" class="hover:opacity-80">Projects</a>
+          <a href="#professional-development" class="hover:opacity-80">Professional Development</a>
+          <a href="#cves" class="hover:opacity-80">CVE Publications</a>
+          <a href="#contact" class="hover:opacity-80">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <button aria-label="Toggle theme" class="rounded-xl border border-slate-200 dark:border-slate-800 px-3 py-1 text-xs" onclick="document.documentElement.classList.contains('dark')?setTheme('light'):setTheme('dark')">Theme</button>
+          <a href="#contact" class="hidden sm:inline-block rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-3 py-1.5 text-xs font-semibold">Get in touch</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="top" class="bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950 border-b border-slate-200/60 dark:border-slate-800">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 py-16">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight">Security Researcher • Penetration Tester</h1>
+          <p class="mt-3 text-slate-600 dark:text-slate-300 max-w-2xl">I break, analyze, and harden systems. This site collects my education, work history, certifications, CVE publications, and ways to contact me.</p>
+          <div class="mt-6 flex gap-3">
+            <a href="#experience" class="rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2 text-sm font-semibold">View Work</a>
+            <a href="#certs" class="rounded-xl border border-slate-300 dark:border-slate-700 px-4 py-2 text-sm font-semibold">See Certifications</a>
+          </div>
+        </div>
+        <div class="md:col-span-1">
+          <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 shadow-sm">
+            <h2 class="font-semibold">Contact</h2>
+            <ul class="mt-3 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+              <li>🐙 <a class="underline" href="https://github.com/<your-username>">GitHub</a></li>
+              <li>🔗 <a class="underline" href="https://www.linkedin.com/in/sameal/">LinkedIn</a></li>
+              <li>📧 <a class="underline" href="mailto:sconroma@protonmail.com">sconroma@protonmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <!-- <section id="about" class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+    <h2 class="text-2xl font-bold">About</h2>
+    <p class="mt-3 text-slate-700 dark:text-slate-300 max-w-3xl">Hands-on security practitioner with a focus on web application testing, cloud defense, and writing clear, reproducible research. I enjoy building small utilities (JWT, Nmap, and log-parsing tools), publishing CVEs, and documenting findings for others to learn from.</p>
+  </section> -->
+
+  <!-- Education -->
+  <section id="education" class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+    <h2 class="text-2xl font-bold">Education</h2>
+    <div class="mt-6 grid gap-4">
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <h3 class="font-semibold">Master of Science: Cybersecurity & Information Assurance |  Western Governors University</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Graduated • Coursework: cloud security, incident response, governance</p>
+      </article>
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <h3 class="font-semibold">Bachelor of Arts: Information Science & Technology | Mercer University</h3>
+        <p class="text-sm text-slate-600 dark:text-slate-400">Graduated • Focus on systems, programming, and IS&amp;T fundamentals</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+    <h2 class="text-2xl font-bold">Work History</h2>
+    <div class="mt-6 grid gap-4">
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <div class="flex items-center justify-between gap-3 flex-wrap">
+          <h3 class="font-semibold">Wolf Fang Security — Security Researcher</h3>
+          <span class="text-xs text-slate-500">Jul 2025 – Present</span>
+        </div>
+        <ul class="mt-2 list-disc pl-5 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          <li>Identified and reported vulnerabilities through web application testing.</li>
+          <li>Configured phishing lab with Gophish &amp; Evilginx to simulate credential theft.</li>
+          <li>Reserved CVE-2025-57244; ongoing publication and write-up.</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <div class="flex items-center justify-between gap-3 flex-wrap">
+          <h3 class="font-semibold">Log(N) Pacific — Cybersecurity Support Engineer</h3>
+          <span class="text-xs text-slate-500">Jan 2024 – Present</span>
+        </div>
+        <ul class="mt-2 list-disc pl-5 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          <li>Resolved security issues across Microsoft Sentinel, VMs, and Azure RBAC.</li>
+          <li>Tenable/STIG compliance and custom configurations.</li>
+        </ul>
+      </article>
+            <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <div class="flex items-center justify-between gap-3 flex-wrap">
+          <h3 class="font-semibold">Hyland — Cloud Support Analyst III</h3>
+          <span class="text-xs text-slate-500">Feb 2021 – Present</span>
+        </div>
+        <ul class="mt-2 list-disc pl-5 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
+          <li>Analyzed system logs and replicated issues to diagnose and resolve technical problems effectively.</li>
+          <li>Assisting with customer deployments, system setup, and integrations to ensure secure and seamless migrations.</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certs" class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+    <h2 class="text-2xl font-bold">Certifications</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-4">
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <h3 class="font-semibold">Offensive Security</h3>
+        <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+          <li>CompTIA Pentest+</li>
+          <li>Certified Ethical Hacker (CEH)</li>
+          <li>Junior Penetration Tester (eJPT)</li>
+          <li>Practical Network Penetration Tester (PNPT)</li>
+          <li>Certified Professional Penetration Tester (eCPPT)</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <h3 class="font-semibold">Defensive Security</h3>
+        <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+          <li>CompTIA CySA+</li>
+          <li>CompTIA Security+</li>
+          <li>Blue Team Level 1 (BTL1)</li>
+          <li>Security Analyst Level 1 (SAL1)</li>
+          <li>ISC2 Certified in Cybersecurity (CC)</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <h3 class="font-semibold">Web Application Security</h3>
+        <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+          <li>Practical Web Pentest Associate (PWPA)</li>
+          <li>Practical Web Pentest Professional (PWPP)</li>
+          <li>Web Application Penetration Tester (eWPT)</li>
+          <li>Web Application Penetration Tester eXtreme (eWPTX)</li>
+        </ul>
+      </article>
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <h3 class="font-semibold">Mobile Application Security</h3>
+        <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+          <li>Practical Mobile Pentest Associate (PMPA)</li>
+          <li>Mobile Application Penetration Tester (eMAPT)</li>
+        </ul>
+      </article>
+            <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <h3 class="font-semibold">Cloud</h3>
+        <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+          <li>CompTIA Cloud+</li>
+          <li>CompTIA Secure Cloud Professional (CSCP)</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Projects -->
+<section id="projects" class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+  <h2 class="text-2xl font-bold">Projects</h2>
+  <p class="mt-3 text-slate-700 dark:text-slate-300 max-w-3xl">
+    A collection of hands-on cybersecurity projects demonstrating practical offensive, defensive, cloud, and automation skills.
+  </p>
+
+  <div class="mt-6 grid gap-4">
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <h3 class="font-semibold">Microsoft Azure Honeynet</h3>
+        <a class="text-xs underline" href="https://github.com/<your-username>/Azure-Honeynet" target="_blank">GitHub</a>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        Deployed vulnerable VMs to attract real attackers, captured telemetry, then hardened the environment to compare pre- and post-security data.
+      </p>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <h3 class="font-semibold">STIG Compliance Remediation</h3>
+        <a class="text-xs underline" href="https://github.com/<your-username>/STIG-Compliance-Remediation" target="_blank">GitHub</a>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        PowerShell scripts automating DISA STIG security hardening and reporting, enabling repeatable configuration of compliant systems.
+      </p>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+      <div class="flex items-center justify-between gap-3 flex-wrap">
+        <h3 class="font-semibold">Cybersecurity Labs & Writeups</h3>
+        <a class="text-xs underline" href="https://github.com/<your-username>/Writeups" target="_blank">GitHub</a>
+      </div>
+      <p class="mt-2 text-sm text-slate-700 dark:text-slate-300">
+        Research, writeups, and PoCs from hands-on labs, CTFs, and real-world testing exercises documenting methodology, exploitation, and remediation.
+      </p>
+    </article>
+  </div>
+</section>
+
+  <!-- CVE Publications -->
+  <section id="cves" class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+    <h2 class="text-2xl font-bold">CVE Publications</h2>
+    <div class="mt-6 grid gap-4">
+      <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <div class="flex items-center justify-between gap-3 flex-wrap">
+          <h3 class="font-semibold">CVE-2025-57244 — Stored XSS in OpenKM</h3>
+          <span class="text-xs text-slate-500">Status: Published</span>
+        </div>
+        <p class="mt-2 text-sm text-slate-700 dark:text-slate-300"> <a class="underline" href="https://www.cve.org/CVERecord?id=CVE-2025-57244">MITRE Entry</a> </p>
+        <ul class="mt-2 list-disc pl-5 text-sm text-slate-700 dark:text-slate-300">
+          <li><a class="underline" href="https://github.com/wolffangsecurity/CVEs/tree/main/CVE-2025-57244">Write Up</a> — write-up &amp; PoC (private until disclosure).</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Professional Development -->
+<section id="professional-development" class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+  <h2 class="text-2xl font-bold">Professional Development</h2>
+  <p class="mt-3 text-slate-700 dark:text-slate-300 max-w-3xl">
+    Continuous learning through structured labs, platforms, and security education.
+  </p>
+
+  <div class="mt-6 grid md:grid-cols-2 gap-4">
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+      <h3 class="font-semibold">TryHackMe</h3>
+      <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+        <li>Top 1% Rank — 180+ Hands-On Labs</li>
+        <li>Penetration Tester & SOC Pathways Completed</li>
+      </ul>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+      <h3 class="font-semibold">Hack The Box Academy</h3>
+      <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+        <li>Bug Bounty Hunter & SOC Analyst Tracks</li>
+        <li>Windows, Linux, AD & Web Exploitation Labs</li>
+      </ul>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+      <h3 class="font-semibold">TCM Security</h3>
+      <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+        <li>Windows & Linux Privilege Escalation</li>
+        <li>OSINT & Practical Web Hacking Labs</li>
+      </ul>
+    </article>
+
+    <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+      <h3 class="font-semibold">RangeForce & Blue Team Platforms</h3>
+      <ul class="mt-2 text-sm space-y-1 text-slate-700 dark:text-slate-300">
+        <li>Hands-on SOC Exercises & Detection Labs</li>
+        <li>Threat Hunting, SIEM, Malware Analysis</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+  <!-- Contact -->
+  <section id="contact" class="mx-auto max-w-5xl px-4 sm:px-6 py-12">
+    <h2 class="text-2xl font-bold">Contact</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5">
+        <h3 class="font-semibold">Links</h3>
+        <ul class="mt-3 space-y-2 text-sm text-slate-700 dark:text-slate-300">
+          <li>📧 <a class="underline" href="mailto:your.email@example.com">your.email@example.com</a></li>
+          <li>🐙 <a class="underline" href="https://github.com/<your-username>">github.com/<your-username></a></li>
+          <li>💼 <a class="underline" href="https://www.linkedin.com/in/<your-linkedin>">linkedin.com/in/<your-linkedin></a></li>
+        </ul>
+      </div>
+      <form class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5" action="https://formspree.io/f/<your-form-id>" method="POST">
+        <h3 class="font-semibold">Message me</h3>
+        <p class="text-xs text-slate-500">Uses Formspree (or replace with your own backend). Remove if not needed.</p>
+        <label class="block text-sm mt-3">Your email
+          <input class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent p-2" type="email" name="email" required>
+        </label>
+        <label class="block text-sm mt-3">Message
+          <textarea class="mt-1 w-full rounded-lg border border-slate-300 dark:border-slate-700 bg-transparent p-2" name="message" rows="4" required></textarea>
+        </label>
+        <button class="mt-4 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 px-4 py-2 text-sm font-semibold">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-12 border-t border-slate-200 dark:border-slate-800 py-8">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 text-sm text-slate-500 flex flex-wrap items-center justify-between gap-3">
+      <p>© <span id="y"></span> Burger. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#top" class="underline">Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
