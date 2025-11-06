@@ -58,6 +58,38 @@
       </div>
     </div>
   </header>
+  
+  <! -- Mobile only -->
+  <header class="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/70 dark:supports-[backdrop-filter]:bg-slate-900/70 border-b border-slate-200/60 dark:border-slate-800">
+  <div class="mx-auto max-w-5xl px-4 sm:px-6">
+    <div class="flex items-center justify-between py-3">
+      
+      <!-- Logo or Name -->
+      <div class="font-bold text-lg">Burger</div>
+
+      <!-- Mobile Menu Button -->
+      <button class="sm:hidden" id="menuBtn">☰</button>
+
+      <!-- Nav -->
+      <nav id="menu" class="hidden sm:flex gap-6 text-sm">
+        <a href="#education" class="hover:opacity-80">Education</a>
+        <a href="#experience" class="hover:opacity-80">Experience</a>
+        <a href="#certs" class="hover:opacity-80">Certifications</a>
+        <a href="#projects" class="hover:opacity-80">Projects</a>
+        <a href="#cves" class="hover:opacity-80">CVE Publications</a>
+        <a href="#professional-development" class="hover:opacity-80">Professional Development</a>
+      </nav>
+
+    </div>
+  </div>
+</header>
+
+<script>
+  document.getElementById('menuBtn').onclick = () => {
+    document.getElementById('menu').classList.toggle('hidden');
+  }
+</script>
+
 
   <!-- Hero -->
   <section id="top" class="bg-gradient-to-b from-slate-50 to-white dark:from-slate-900 dark:to-slate-950 border-b border-slate-200/60 dark:border-slate-800">
