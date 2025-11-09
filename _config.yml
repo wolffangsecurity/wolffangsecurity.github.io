@@ -2,5 +2,6 @@ show_downloads: false
 title:""
 google_analytics: 
 theme: jekyll-theme-slate
-
+include:
+  - assets/css
 
