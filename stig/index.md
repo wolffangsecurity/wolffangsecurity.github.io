@@ -159,11 +159,11 @@ A collection of scripts and configurations to remediate common misconfigurations
 - [WN11-00-000175](./windows/WN11-00-000175.md)
 - [WN11-00-000210](./windows/WN11-00-000210.md)
 - [WN11-00-000395](./windows/WN11-00-000395.md)
-- WN11-AC-000005
-- WN11-AC-000010
-- WN11-AC-000015
-- WN11-AC-000020
-- WN11-AC-000030
+- [WN11-AC-000005](./windows/WN11-AC-000005.md)
+- [WN11-AC-000010](./windows/WN11-AC-000010.md)
+- [WN11-AC-000015](./windows/WN11-AC-000015.md)
+- [WN11-AC-000020](./windows/WN11-AC-000020.md)
+- [WN11-AC-000030](./windows/WN11-AC-000030.md)
 - WN11-AC-000035
 - WN11-AC-000040
 - WN11-AU-000500
