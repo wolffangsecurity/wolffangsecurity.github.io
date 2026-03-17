@@ -153,9 +153,7 @@ A collection of scripts and configurations to remediate common misconfigurations
 - WN11-00-000031
 - WN11-00-000032
 - [WN11-00-000045](./windows/WN11-00-000045.md)
-- WN11-00-000126
-- WN11-00-000135
-- WN11-00-000150
+- [WN11-00-000150](./windows/WN11-00-000150.md)
 - WN11-00-000155
 - WN11-00-000165
 - WN11-00-000170
