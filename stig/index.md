@@ -172,11 +172,11 @@ A collection of scripts and configurations to remediate common misconfigurations
 - [WN11-CC-000010](./windows/WN11-CC-000010.md)
 - [WN11-CC-000020](./windows/WN11-CC-000020.md)
 - [WN11-CC-000025](./windows/WN11-CC-000025.md)
-- WN11-CC-000030
-- WN11-CC-000035
-- WN11-CC-000038
-- WN11-CC-000039
-- WN11-CC-000040
+- [WN11-CC-000030](./windows/WN11-CC-000030.md)
+- [WN11-CC-000035](./windows/WN11-CC-000035.md)
+- [WN11-CC-000038](./windows/WN11-CC-000038.md)
+- [WN11-CC-000039](./windows/WN11-CC-000039.md)
+- [WN11-CC-000040](./windows/WN11-CC-000040.md)
 - WN11-CC-000044
 - WN11-CC-000050
 - WN11-CC-000052
