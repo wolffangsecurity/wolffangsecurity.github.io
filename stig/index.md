@@ -152,7 +152,7 @@ A collection of scripts and configurations to remediate common misconfigurations
 - WN11-00-000010
 - WN11-00-000031
 - WN11-00-000032
-- WN11-00-000045
+- [WN11-00-000045](./stig/windows/WN11-00-000045.md)
 - WN11-00-000126
 - WN11-00-000135
 - WN11-00-000150
