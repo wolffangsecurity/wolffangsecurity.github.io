@@ -47,13 +47,13 @@ A collection of scripts and configurations to remediate common misconfigurations
 - [WN11-CC-000150](./windows/WN11-CC-000150.md)
 - [WN11-CC-000155](./windows/WN11-CC-000155.md)
 - [WN11-CC-000165](./windows/WN11-CC-000165.md)
-- [WN11-CC-000170]
-- [WN11-CC-000175]
-- [WN11-CC-000180]
-- [WN11-CC-000185]
-- [WN11-CC-000190]
-- [WN11-CC-000195]
-- [WN11-CC-000197]
+- WN11-CC-000170
+- WN11-CC-000175
+- WN11-CC-000180
+- WN11-CC-000185
+- WN11-CC-000190
+- WN11-CC-000195
+- WN11-CC-000197
 - WN11-CC-000200
 - WN11-CC-000204
 - WN11-CC-000205
@@ -117,6 +117,8 @@ A collection of scripts and configurations to remediate common misconfigurations
 - WN11-UR-000085
 - WN11-UR-000090
 - WN11-UR-000160
+
+
 ----------
 
 ## Windows 10 STIGs
