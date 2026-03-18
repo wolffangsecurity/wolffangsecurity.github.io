@@ -118,6 +118,7 @@ A collection of scripts and configurations to remediate common misconfigurations
 - WN11-UR-000090
 - WN11-UR-000160
 ----------
+
 ## Windows 10 STIGs
 - [WN10-00-000031](./windows/WN10-00-000031.md)  
 - [WN10-00-000032](./windows/WN10-00-000032.md)
