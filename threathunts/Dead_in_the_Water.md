@@ -1,4 +1,4 @@
-## Azuki Import/Export - 梓貿易株式会社 Incident Report
+## Azuki Import/Export - Incident Report
 - **Date of Report**: 2026-03-12
 - **Incident Date:**  2025-11-27
 - **Severity Level**:  [] LOW  [] MEDIUM  [] HIGH  [X] CRITICAL 
