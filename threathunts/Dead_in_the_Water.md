@@ -3,7 +3,6 @@
 - **Incident Date:**  2025-11-27
 - **Severity Level**:  [] LOW  [] MEDIUM  [] HIGH  [X] CRITICAL 
 - **ENVIRONMENT:** Azuki Logistics Corporate Network
-- **Incident ID:**
 - **Tools**: Log Analytics Workspace
 - **Starting Point:** `DeviceProcessEvents  | where DeviceName contains "azuki"`
 
@@ -56,9 +55,6 @@ DeviceLogonEvents
 - Reference: [T1078.002: Valid Accounts - Domain Accounts](https://attack.mitre.org/techniques/T1078/002/)
 - `backup-admin`
 
-KQL Query:
-
-Go back and modify yhe query
 
 -----------
 ####  **FLAG 4: DISCOVERY - Directory Enumeration**
