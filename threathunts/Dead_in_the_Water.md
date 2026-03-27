@@ -259,6 +259,7 @@ DeviceProcessEvents
 - Findings: Ransomware stops backup services to prevent recovery during encryption.
 - Reference: [T1490: Inhibit System Recovery](https://attack.mitre.org/techniques/T1490/)  
 - `"net" stop VSS /y`
+
 ```SQL
 DeviceProcessEvents
 | where ProcessCommandLine contains "net" and ProcessCommandLine contains "vss"
