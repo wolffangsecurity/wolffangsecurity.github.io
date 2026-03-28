@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio — Security Researcher</title>
+  <title>Portfolio - Security Researcher</title>
   <meta name="description" content="Cybersecurity portfolio: education, work history, certifications, CVE publications, and contact." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,8 +23,6 @@
     }
     html { scroll-behavior: smooth; }
     body { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 14px; line-height: 1.6; min-height: 100vh; }
-
-    /* HEADER */
     header { position: sticky; top: 0; z-index: 100; background: rgba(10,10,10,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
     .header-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 52px; }
     .logo { font-family: var(--mono); font-size: 13px; color: var(--accent); }
@@ -32,8 +30,6 @@
     .tab-nav button { background: none; border: none; color: var(--text2); font-family: var(--sans); font-size: 13px; padding: 6px 14px; cursor: pointer; border-radius: var(--radius); transition: color 0.15s, background 0.15s; white-space: nowrap; }
     .tab-nav button:hover  { color: var(--text); background: var(--bg3); }
     .tab-nav button.active { color: var(--accent); background: var(--accent-dim); }
-
-    /* HERO */
     .hero { max-width: 1100px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: start; border-bottom: 1px solid var(--border); }
     .hero-tag { font-family: var(--mono); font-size: 11px; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px; }
     .hero h1 { font-family: var(--mono); font-size: clamp(22px,3vw,32px); font-weight: 500; color: var(--text); line-height: 1.2; margin-bottom: 12px; }
@@ -44,15 +40,11 @@
     .contact-card li { margin-bottom: 8px; font-size: 13px; }
     .contact-card a { color: var(--text2); text-decoration: none; transition: color 0.15s; }
     .contact-card a:hover { color: var(--accent); }
-
-    /* MAIN */
     .main { max-width: 1100px; margin: 0 auto; padding: 0 24px 80px; }
     .tab-section { display: none; padding-top: 40px; }
     .tab-section.active { display: block; }
     .section-heading { font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
     .section-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
-
-    /* CARDS */
     .card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius2); padding: 18px 20px; margin-bottom: 12px; transition: border-color 0.15s; }
     .card:hover { border-color: var(--border2); }
     .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
@@ -61,48 +53,30 @@
     .card ul { padding-left: 16px; color: var(--text2); font-size: 13px; }
     .card li { margin-bottom: 4px; }
     .card p { color: var(--text2); font-size: 13px; }
-
-    /* CERT GRID */
     .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 12px; }
     .cert-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius2); padding: 16px 18px; }
     .cert-card h3 { font-size: 12px; font-weight: 600; color: var(--accent); font-family: var(--mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 10px; }
     .cert-card ul { list-style: none; }
     .cert-card li { font-size: 13px; color: var(--text2); padding: 4px 0; border-bottom: 1px solid var(--border); }
     .cert-card li:last-child { border-bottom: none; }
-
-    /* MASTER-DETAIL */
     .master-detail { display: grid; grid-template-columns: 220px 1fr; gap: 0; border: 1px solid var(--border); border-radius: var(--radius2); overflow: hidden; align-items: start; }
     .md-sidebar { background: var(--bg2); border-right: 1px solid var(--border); display: flex; flex-direction: column; }
     .md-sidebar-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text3); padding: 14px 16px 8px; }
-
-    /* level 1 */
     .md-item { padding: 10px 16px; font-size: 13px; color: var(--text2); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; line-height: 1.4; }
     .md-item:hover { color: var(--text); background: var(--bg3); }
     .md-item.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
-
-    /* level 2 — platforms (TryHackMe, Hack Smarter Labs) */
     .md-item-sub { padding: 8px 16px 8px 28px; font-size: 12px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
     .md-item-sub:hover { color: var(--text2); background: var(--bg3); }
     .md-item-sub.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
-
-    /* level 3 — individual writeups */
     .md-item-sub2 { padding: 7px 16px 7px 42px; font-size: 11px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
     .md-item-sub2:hover { color: var(--text2); background: var(--bg3); }
     .md-item-sub2.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
-
-    /* DETAIL PANE */
     .md-detail-pane { padding: 28px; display: block; min-width: 0; }
-
-    /* Images */
     .md-content img { max-width: 100%; height: auto; display: block; border-radius: var(--radius); border: 1px solid var(--border); margin: 12px 0; }
-
-    /* Loading / error */
     .md-loading { display: flex; align-items: center; gap: 10px; color: var(--text3); font-family: var(--mono); font-size: 12px; padding: 40px 0; }
     .md-loading::before { content: ''; width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--border2); border-top-color: var(--accent); animation: spin 0.7s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .md-error { color: var(--red); font-family: var(--mono); font-size: 12px; background: rgba(255,77,77,0.06); border: 1px solid rgba(255,77,77,0.2); border-radius: var(--radius); padding: 12px 14px; }
-
-    /* RENDERED MARKDOWN */
     .md-content h1 { font-size: 18px; font-weight: 600; color: var(--text); margin: 0 0 6px; }
     .md-content h2 { font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing: 0.1em; text-transform: uppercase; margin: 24px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
     .md-content h3 { font-size: 14px; font-weight: 600; color: var(--text); margin: 18px 0 8px; }
@@ -123,8 +97,6 @@
     .md-content tr:last-child td { border-bottom: none; }
     .md-content blockquote { border-left: 2px solid var(--accent); padding: 8px 14px; background: var(--accent-dim); border-radius: 0 var(--radius) var(--radius) 0; margin-bottom: 12px; }
     .md-content blockquote p { margin: 0; }
-
-    /* Shortcodes */
     .md-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
     .md-tag { font-family: var(--mono); font-size: 11px; padding: 3px 9px; border-radius: 99px; background: var(--bg3); border: 1px solid var(--border); color: var(--text3); }
     .md-meta { font-family: var(--mono); font-size: 11px; color: var(--text3); display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
@@ -138,22 +110,16 @@
     .md-metric .val.good { color: var(--accent); }
     .md-metric .val.bad  { color: var(--red); }
     .md-badge { display: inline-block; font-family: var(--mono); font-size: 10px; padding: 2px 8px; border-radius: 99px; background: var(--accent-dim); border: 1px solid rgba(0,255,136,0.3); color: var(--accent); }
-
-    /* DEV GRID */
     .dev-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 12px; }
     .dev-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius2); padding: 16px 18px; }
     .dev-card h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 10px; }
     .dev-card ul { list-style: none; }
     .dev-card li { font-size: 12px; color: var(--text2); padding: 4px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 6px; }
-    .dev-card li::before { content: '▸'; color: var(--text3); font-size: 10px; }
+    .dev-card li::before { content: '\25B8'; color: var(--text3); font-size: 10px; }
     .dev-card li:last-child { border-bottom: none; }
-
-    /* SCROLLBAR */
     ::-webkit-scrollbar { width: 4px; height: 4px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 99px; }
-
-    /* RESPONSIVE */
     @media (max-width: 700px) {
       .hero { grid-template-columns: 1fr; }
       .master-detail { grid-template-columns: 1fr; }
@@ -165,7 +131,6 @@
   </style>
 </head>
 <body>
-
   <header>
     <div class="header-inner">
       <span class="logo">~/portfolio</span>
@@ -189,35 +154,33 @@
     <div class="contact-card">
       <h2>Contact</h2>
       <ul>
-        <li>🐙 <a href="https://github.com/wolffangsecurity/" target="_blank" rel="noopener">GitHub</a></li>
-        <li>🔗 <a href="https://www.linkedin.com/in//" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li>📧 <a href="mailto:@protonmail.com">@protonmail.com</a></li>
+        <li>&#x1F419; <a href="https://github.com/wolffangsecurity/" target="_blank" rel="noopener">GitHub</a></li>
+        <li>&#x1F517; <a href="https://www.linkedin.com/in//" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>&#x1F4E7; <a href="mailto:@protonmail.com">@protonmail.com</a></li>
       </ul>
     </div>
   </section>
 
   <main class="main">
 
-    <!-- EDUCATION -->
     <section id="education" class="tab-section">
       <div class="section-heading">Education</div>
       <div class="card">
-        <div class="card-header"><h3>Master of Science — Cybersecurity &amp; Information Assurance</h3></div>
+        <div class="card-header"><h3>Master of Science &mdash; Cybersecurity &amp; Information Assurance</h3></div>
         <p>Western Governors University</p>
       </div>
       <div class="card">
-        <div class="card-header"><h3>Bachelor of Arts — Information Science &amp; Technology</h3></div>
+        <div class="card-header"><h3>Bachelor of Arts &mdash; Information Science &amp; Technology</h3></div>
         <p>Mercer University</p>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
     <section id="experience" class="tab-section">
       <div class="section-heading">Professional Experience</div>
       <div class="card">
         <div class="card-header">
-          <h3>Wolf Fang Security — Security Researcher</h3>
-          <span class="card-date">Jul 2025 – Present</span>
+          <h3>Wolf Fang Security &mdash; Security Researcher</h3>
+          <span class="card-date">Jul 2025 &ndash; Present</span>
         </div>
         <ul>
           <li>Identify and report vulnerabilities through web application security testing</li>
@@ -227,8 +190,8 @@
       </div>
       <div class="card">
         <div class="card-header">
-          <h3>Log(N) Pacific — Cybersecurity Analyst</h3>
-          <span class="card-date">Jan 2024 – Present</span>
+          <h3>Log(N) Pacific &mdash; Cybersecurity Analyst</h3>
+          <span class="card-date">Jan 2024 &ndash; Present</span>
         </div>
         <ul>
           <li>Automate STIG compliance with PowerShell scripting</li>
@@ -240,8 +203,8 @@
       </div>
       <div class="card">
         <div class="card-header">
-          <h3>Hyland — Cloud Support Analyst III</h3>
-          <span class="card-date">Feb 2021 – Present</span>
+          <h3>Hyland &mdash; Cloud Support Analyst III</h3>
+          <span class="card-date">Feb 2021 &ndash; Present</span>
         </div>
         <ul>
           <li>Analyze system logs and replicate issues to diagnose and resolve technical problems</li>
@@ -256,17 +219,14 @@
       </div>
     </section>
 
-    <!-- CERTIFICATIONS -->
     <section id="certs" class="tab-section">
       <div class="section-heading">Certifications</div>
       <div class="cert-grid">
         <div class="cert-card">
           <h3>Offensive Security</h3>
           <ul>
-            <li>CompTIA Pentest+</li>
-            <li>Certified Ethical Hacker (CEH)</li>
-            <li>Junior Penetration Tester (eJPT)</li>
-            <li>Certified Network Pentester (CNPen)</li>
+            <li>CompTIA Pentest+</li><li>Certified Ethical Hacker (CEH)</li>
+            <li>Junior Penetration Tester (eJPT)</li><li>Certified Network Pentester (CNPen)</li>
             <li>Practical Network Penetration Tester (PNPT)</li>
             <li>Certified Professional Penetration Tester (eCPPT)</li>
           </ul>
@@ -274,18 +234,15 @@
         <div class="cert-card">
           <h3>Defensive Security</h3>
           <ul>
-            <li>CompTIA CySA+</li>
-            <li>CompTIA Security+</li>
-            <li>Blue Team Level 1 (BTL1)</li>
-            <li>Security Analyst Level 1 (SAL1)</li>
+            <li>CompTIA CySA+</li><li>CompTIA Security+</li>
+            <li>Blue Team Level 1 (BTL1)</li><li>Security Analyst Level 1 (SAL1)</li>
             <li>ISC2 Certified in Cybersecurity (CC)</li>
           </ul>
         </div>
         <div class="cert-card">
           <h3>Web Application Security</h3>
           <ul>
-            <li>Certified AppSec Pentester (CAPen)</li>
-            <li>Practical Web Pentest Associate (PWPA)</li>
+            <li>Certified AppSec Pentester (CAPen)</li><li>Practical Web Pentest Associate (PWPA)</li>
             <li>Practical Web Pentest Professional (PWPP)</li>
             <li>Web Application Penetration Tester (eWPT)</li>
             <li>Web App Penetration Tester eXtreme (eWPTX)</li>
@@ -310,117 +267,53 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
     <section id="projects" class="tab-section">
       <div class="section-heading">Projects</div>
       <div class="master-detail">
         <div class="md-sidebar" id="proj-sidebar">
           <div class="md-sidebar-label">Projects</div>
-
-          <div class="md-item active"
-               data-src="content/projects/az-honeynet.md"
-               onclick="loadContent(this, 'proj-pane')">Azure Honeynet</div>
-
-          <div class="md-item"
-               data-src="content/projects/stig-compliance.md"
-               onclick="loadContent(this, 'proj-pane')">STIG Compliance</div>
-
-          <!-- CTF Writeups — clicking only expands platform list, no content load -->
-          <div class="md-item"
-               data-toggle="ctf-platforms"
-               onclick="toggleSection('ctf-platforms'); this.classList.toggle('active')">CTF Writeups</div>
-
-          <!-- Platform: TryHackMe -->
-          <div class="md-item-sub sidebar-section ctf-platforms" style="display:none"
-               data-toggle="thm-writeups"
-               onclick="toggleSection('thm-writeups')">↳ TryHackMe</div>
-
-          <div class="md-item-sub2 sidebar-section ctf-platforms thm-writeups" style="display:none"
-               data-src="content/writeups/lazyadmin.md"
-               onclick="loadContent(this, 'proj-pane')">Lazy Admin</div>
-
-          <!-- Platform: Hack Smarter Labs -->
-          <div class="md-item-sub sidebar-section ctf-platforms" style="display:none"
-               data-toggle="hsl-writeups"
-               onclick="toggleSection('hsl-writeups')">↳ Hack Smarter Labs</div>
-
-          <div class="md-item-sub2 sidebar-section ctf-platforms hsl-writeups" style="display:none"
-               data-src="content/writeups/building-magic.md"
-               onclick="loadContent(this, 'proj-pane')">Building Magic</div>
-
-          <div class="md-item"
-               data-src="content/projects/cyber-labs.md"
-               onclick="loadContent(this, 'proj-pane')">Cybersecurity Labs</div>
+          <div class="md-item active" data-src="content/projects/az-honeynet.md" onclick="loadContent(this,'proj-pane')">Azure Honeynet</div>
+          <div class="md-item" data-src="content/projects/stig-compliance.md" onclick="loadContent(this,'proj-pane')">STIG Compliance</div>
+          <div class="md-item" data-toggle="ctf-platforms" onclick="toggleSection('ctf-platforms')">CTF Writeups</div>
+          <div class="md-item-sub sidebar-section ctf-platforms" style="display:none" data-toggle="thm-writeups" onclick="toggleSection('thm-writeups')">&#x21B3; TryHackMe</div>
+          <div class="md-item-sub2 sidebar-section ctf-platforms thm-writeups" style="display:none" data-src="content/writeups/lazyadmin.md" onclick="loadContent(this,'proj-pane')">Lazy Admin</div>
+          <div class="md-item-sub sidebar-section ctf-platforms" style="display:none" data-toggle="hsl-writeups" onclick="toggleSection('hsl-writeups')">&#x21B3; Hack Smarter Labs</div>
+          <div class="md-item-sub2 sidebar-section ctf-platforms hsl-writeups" style="display:none" data-src="content/writeups/building-magic.md" onclick="loadContent(this,'proj-pane')">Building Magic</div>
+          <div class="md-item" data-src="content/projects/cyber-labs.md" onclick="loadContent(this,'proj-pane')">Cybersecurity Labs</div>
         </div>
-        <div class="md-detail-pane" id="proj-pane">
-          <div class="md-loading">Loading&hellip;</div>
-        </div>
+        <div class="md-detail-pane" id="proj-pane"><div class="md-loading">Loading&#8230;</div></div>
       </div>
     </section>
 
-    <!-- CVEs -->
     <section id="cves" class="tab-section">
       <div class="section-heading">CVE Publications</div>
       <div class="master-detail">
         <div class="md-sidebar" id="cve-sidebar">
           <div class="md-sidebar-label">CVEs</div>
-          <div class="md-item active"
-               data-src="content/cves/CVE-2025-57244.md"
-               onclick="loadContent(this, 'cve-pane')">CVE-2025-57244</div>
+          <div class="md-item active" data-src="content/cves/CVE-2025-57244.md" onclick="loadContent(this,'cve-pane')">CVE-2025-57244</div>
         </div>
-        <div class="md-detail-pane" id="cve-pane">
-          <div class="md-loading">Loading&hellip;</div>
-        </div>
+        <div class="md-detail-pane" id="cve-pane"><div class="md-loading">Loading&#8230;</div></div>
       </div>
     </section>
 
-    <!-- DEV -->
     <section id="dev" class="tab-section">
       <div class="section-heading">Professional Development</div>
       <div class="dev-grid">
         <div class="dev-card">
-          <h3><a href="https://tryhackme.com/p/Wcmoawq" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">TryHackMe ↗</a></h3>
-          <ul>
-            <li>Red Teaming</li>
-            <li>Defending Azure</li>
-            <li>Penetration Testing (Network &amp; Web App)</li>
-          </ul>
+          <h3><a href="https://tryhackme.com/p/Wcmoawq" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">TryHackMe &#x2197;</a></h3>
+          <ul><li>Red Teaming</li><li>Defending Azure</li><li>Penetration Testing (Network &amp; Web App)</li></ul>
         </div>
         <div class="dev-card">
           <h3>Hack The Box Academy</h3>
-          <ul>
-            <li>Web Application Security</li>
-            <li>Network &amp; Service Enumeration</li>
-            <li>Active Directory Attacks</li>
-            <li>Post-Exploitation &amp; Privilege Escalation</li>
-            <li>Threat Hunting &amp; SIEM Fundamentals</li>
-          </ul>
+          <ul><li>Web Application Security</li><li>Network &amp; Service Enumeration</li><li>Active Directory Attacks</li><li>Post-Exploitation &amp; Privilege Escalation</li><li>Threat Hunting &amp; SIEM Fundamentals</li></ul>
         </div>
         <div class="dev-card">
           <h3>TCM Security</h3>
-          <ul>
-            <li>Web Hacking</li>
-            <li>Bug Bounty Hunting</li>
-            <li>Practical API Hacking</li>
-            <li>Security Operations (SOC)</li>
-            <li>Linux Privilege Escalation</li>
-            <li>Practical Windows Forensics</li>
-            <li>Windows Privilege Escalation</li>
-            <li>Practical Phishing Campaigns</li>
-            <li>Open-Source Intelligence (OSINT)</li>
-            <li>Practical Malware Analysis &amp; Triage</li>
-            <li>Mobile Application Penetration Testing</li>
-          </ul>
+          <ul><li>Web Hacking</li><li>Bug Bounty Hunting</li><li>Practical API Hacking</li><li>Security Operations (SOC)</li><li>Linux Privilege Escalation</li><li>Practical Windows Forensics</li><li>Windows Privilege Escalation</li><li>Practical Phishing Campaigns</li><li>Open-Source Intelligence (OSINT)</li><li>Practical Malware Analysis &amp; Triage</li><li>Mobile Application Penetration Testing</li></ul>
         </div>
         <div class="dev-card">
           <h3>RangeForce</h3>
-          <ul>
-            <li>Splunk</li>
-            <li>Cloud Security</li>
-            <li>Web App Security</li>
-            <li>Vulnerability Management</li>
-            <li>Threat Detection &amp; Incident Response</li>
-          </ul>
+          <ul><li>Splunk</li><li>Cloud Security</li><li>Web App Security</li><li>Vulnerability Management</li><li>Threat Detection &amp; Incident Response</li></ul>
         </div>
       </div>
     </section>
@@ -445,26 +338,21 @@
       if (btn) btn.classList.add('active');
     }
 
-    // Toggle a named section of sidebar items open/closed
     function toggleSection(sectionName) {
-      // Find all elements that are direct members of this section
-      // Direct members have this sectionName class but no other section class
-      // (e.g. ctf-platforms items, but not thm-writeups items which are nested deeper)
       var allItems = document.querySelectorAll('.' + sectionName);
+      // Direct children: elements whose last section class is sectionName
       var directItems = Array.from(allItems).filter(function(el) {
-        var sectionClasses = Array.from(el.classList).filter(function(c) {
+        var sc = Array.from(el.classList).filter(function(c) {
           return c !== 'md-item-sub' && c !== 'md-item-sub2' && c !== 'sidebar-section';
         });
-        return sectionClasses.length === 1 && sectionClasses[0] === sectionName;
+        return sc[sc.length - 1] === sectionName;
       });
-
       var anyVisible = directItems.some(function(el) { return el.style.display !== 'none'; });
-
       if (anyVisible) {
-        // Collapse: hide direct items AND everything nested beneath them
+        // Collapse: hide everything in this group including nested
         allItems.forEach(function(el) { el.style.display = 'none'; });
       } else {
-        // Expand: show only direct children
+        // Expand: show direct children only
         directItems.forEach(function(el) { el.style.display = 'block'; });
       }
     }
@@ -484,14 +372,8 @@
       var src = clickedEl.dataset.src;
       var pane = document.getElementById(paneId);
       if (!src) return;
-
-      pane.innerHTML = '<div class="md-loading">Loading&hellip;</div>';
-
-      if (cache[src]) {
-        pane.innerHTML = renderMarkdown(cache[src]);
-        return;
-      }
-
+      pane.innerHTML = '<div class="md-loading">Loading&#8230;</div>';
+      if (cache[src]) { pane.innerHTML = renderMarkdown(cache[src]); return; }
       try {
         var res = await fetch(src);
         if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
@@ -505,13 +387,11 @@
 
     function renderMarkdown(raw) {
       var meta = '';
-
       raw = raw.replace(/^<!--\s*meta:\s*(.+?)\s*-->/m, function(_, line) {
         var parts = line.split('|').map(function(s) { return s.trim(); });
         meta = '<div class="md-meta">' + parts.map(function(p) { return '<span>' + p + '</span>'; }).join('') + '</div>';
         return '';
       });
-
       raw = raw.replace(/\[chain:\s*(.+?)\]/g, function(_, chain) {
         var steps = chain.split('>').map(function(s) { return s.trim(); });
         var html = steps.map(function(s, i) {
@@ -519,27 +399,21 @@
         }).join('');
         return '<div class="md-chain">' + html + '</div>';
       });
-
       raw = raw.replace(/\[metrics\]([\s\S]+?)\[\/metrics\]/g, function(_, block) {
         var rows = block.trim().split('\n').filter(Boolean);
         var cards = rows.map(function(row) {
           var parts = row.split('|').map(function(s) { return s.trim(); });
-          return '<div class="md-metric"><div class="lbl">' + parts[0] + '</div><div class="val ' + (parts[2] || '') + '">' + parts[1] + '</div></div>';
+          return '<div class="md-metric"><div class="lbl">' + parts[0] + '</div><div class="val ' + (parts[2]||'') + '">' + parts[1] + '</div></div>';
         });
         return '<div class="md-metrics">' + cards.join('') + '</div>';
       });
-
       raw = raw.replace(/\[tags:\s*(.+?)\]/g, function(_, tagList) {
-        var tags = tagList.split(',').map(function(t) {
-          return '<span class="md-tag">' + t.trim() + '</span>';
-        });
+        var tags = tagList.split(',').map(function(t) { return '<span class="md-tag">' + t.trim() + '</span>'; });
         return '<div class="md-tags">' + tags.join('') + '</div>';
       });
-
       raw = raw.replace(/\[badge:\s*(.+?)\]/g, function(_, text) {
         return '<span class="md-badge">' + text + '</span>';
       });
-
       var html = marked.parse(raw);
       return meta + '<div class="md-content">' + html + '</div>';
     }
