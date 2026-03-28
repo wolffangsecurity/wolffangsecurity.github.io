@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Security Researcher</title>
+  <meta name="description" content="Cybersecurity portfolio: education, work history, certifications, CVE publications, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "",
+    "jobTitle": "Security Researcher / Penetration Tester",
+    "url": "https://<your-username>.github.io/",
+    "sameAs": [
+      "https://github.com/wolffangsecurity",
+      "https://www.linkedin.com/in/<your-linkedin>"
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0a0a0a;
+      --bg2:         #111111;
+      --bg3:         #181818;
+      --border:      #242424;
+      --border2:     #2e2e2e;
+      --text:        #e8e8e8;
+      --text2:       #888;
+      --text3:       #555;
+      --accent:      #00ff88;
+      --accent-dim:  rgba(0,255,136,0.08);
+      --red:         #ff4d4d;
+      --amber:       #f5a623;
+      --blue:        #4d9fff;
+      --mono:        'IBM Plex Mono', monospace;
+      --sans:        'IBM Plex Sans', sans-serif;
+      --radius:      6px;
+      --radius2:     10px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(10,10,10,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      max-width: 1100px; margin: 0 auto; padding: 0 24px;
+      display: flex; align-items: center; justify-content: space-between; height: 52px;
+    }
+    .logo { font-family: var(--mono); font-size: 13px; color: var(--accent); }
+
+    .tab-nav { display: flex; gap: 0; overflow-x: auto; }
+    .tab-nav button {
+      background: none; border: none; color: var(--text2);
+      font-family: var(--sans); font-size: 13px;
+      padding: 6px 14px; cursor: pointer;
+      border-radius: var(--radius);
+      transition: color 0.15s, background 0.15s;
+      white-space: nowrap;
+    }
+    .tab-nav button:hover  { color: var(--text); background: var(--bg3); }
+    .tab-nav button.active { color: var(--accent); background: var(--accent-dim); }
+
+    /* ── HERO ── */
+    .hero {
+      max-width: 1100px; margin: 0 auto; padding: 56px 24px 40px;
+      display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: start;
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-tag {
+      font-family: var(--mono); font-size: 11px; color: var(--accent);
+      letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .hero h1 {
+      font-family: var(--mono); font-size: clamp(22px,3vw,32px);
+      font-weight: 500; color: var(--text); line-height: 1.2; margin-bottom: 12px;
+    }
+    .hero p { color: var(--text2); font-size: 14px; max-width: 520px; line-height: 1.7; }
+
+    .contact-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: var(--radius2); padding: 18px 20px; min-width: 200px;
+    }
+    .contact-card h2 {
+      font-family: var(--mono); font-size: 11px; color: var(--text3);
+      letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .contact-card ul { list-style: none; }
+    .contact-card li { margin-bottom: 8px; font-size: 13px; }
+    .contact-card a { color: var(--text2); text-decoration: none; transition: color 0.15s; }
+    .contact-card a:hover { color: var(--accent); }
+
+    /* ── MAIN ── */
+    .main { max-width: 1100px; margin: 0 auto; padding: 0 24px 80px; }
+
+    .tab-section { display: none; padding-top: 40px; }
+    .tab-section.active { display: block; }
+
+    .section-heading {
+      font-family: var(--mono); font-size: 11px; color: var(--text3);
+      letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 20px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+    /* ── STATIC CARDS (Education, Experience) ── */
+    .card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: var(--radius2); padding: 18px 20px; margin-bottom: 12px;
+      transition: border-color 0.15s;
+    }
+    .card:hover { border-color: var(--border2); }
+    .card-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
+    .card h3 { font-size: 14px; font-weight: 600; color: var(--text); }
+    .card-date { font-family: var(--mono); font-size: 11px; color: var(--text3); white-space: nowrap; padding-top: 2px; }
+    .card ul { padding-left: 16px; color: var(--text2); font-size: 13px; }
+    .card li { margin-bottom: 4px; }
+    .card p { color: var(--text2); font-size: 13px; }
+
+    /* ── CERT GRID ── */
+    .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 12px; }
+    .cert-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: var(--radius2); padding: 16px 18px;
+    }
+    .cert-card h3 {
+      font-size: 12px; font-weight: 600; color: var(--accent);
+      font-family: var(--mono); letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 10px;
+    }
+    .cert-card ul { list-style: none; }
+    .cert-card li { font-size: 13px; color: var(--text2); padding: 4px 0; border-bottom: 1px solid var(--border); }
+    .cert-card li:last-child { border-bottom: none; }
+
+    /* ── MASTER-DETAIL ── */
+    .master-detail {
+      display: grid; grid-template-columns: 220px 1fr; gap: 0;
+      border: 1px solid var(--border); border-radius: var(--radius2);
+      overflow: hidden; min-height: 500px;
+    }
+    .md-sidebar {
+      background: var(--bg2); border-right: 1px solid var(--border);
+      display: flex; flex-direction: column;
+    }
+    .md-sidebar-label {
+      font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--text3); padding: 14px 16px 8px;
+    }
+    .md-item {
+      padding: 10px 16px; font-size: 13px; color: var(--text2);
+      cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; line-height: 1.4;
+    }
+    .md-item:hover { color: var(--text); background: var(--bg3); }
+    .md-item.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
+    .md-item-sub {
+      padding: 8px 16px 8px 28px; font-size: 12px; color: var(--text3);
+      cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s;
+    }
+    .md-item-sub:hover { color: var(--text2); background: var(--bg3); }
+    .md-item-sub.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
+    .md-divider { height: 1px; background: var(--border); margin: 4px 0; }
+
+    /* ── DETAIL PANE ── */
+    .md-detail-pane {
+      padding: 28px; overflow-y: auto; min-height: 500px;
+      display: flex; flex-direction: column;
+    }
+
+    /* Loading state */
+    .md-loading {
+      display: flex; align-items: center; gap: 10px;
+      color: var(--text3); font-family: var(--mono); font-size: 12px; margin: auto;
+    }
+    .md-loading::before {
+      content: ''; width: 14px; height: 14px; border-radius: 50%;
+      border: 1.5px solid var(--border2); border-top-color: var(--accent);
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* Error state */
+    .md-error {
+      color: var(--red); font-family: var(--mono); font-size: 12px;
+      background: rgba(255,77,77,0.06); border: 1px solid rgba(255,77,77,0.2);
+      border-radius: var(--radius); padding: 12px 14px; margin: auto;
+    }
+
+    /* ── RENDERED MARKDOWN STYLES ── */
+    .md-content h1 { font-size: 18px; font-weight: 600; color: var(--text); margin: 0 0 6px; }
+    .md-content h2 { font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing: 0.1em; text-transform: uppercase; margin: 24px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+    .md-content h3 { font-size: 14px; font-weight: 600; color: var(--text); margin: 18px 0 8px; }
+    .md-content p  { color: var(--text2); font-size: 13px; line-height: 1.75; margin-bottom: 12px; }
+    .md-content ul, .md-content ol { padding-left: 18px; color: var(--text2); font-size: 13px; margin-bottom: 12px; }
+    .md-content li { margin-bottom: 4px; line-height: 1.6; }
+    .md-content a  { color: var(--blue); text-decoration: none; }
+    .md-content a:hover { text-decoration: underline; }
+    .md-content strong { color: var(--text); font-weight: 600; }
+    .md-content em { color: var(--text2); font-style: italic; }
+    .md-content hr { border: none; border-top: 1px solid var(--border); margin: 20px 0; }
+
+    /* Code blocks from markdown */
+    .md-content pre {
+      background: var(--bg3); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 12px 14px;
+      overflow-x: auto; margin-bottom: 12px;
+    }
+    .md-content pre code {
+      font-family: var(--mono); font-size: 12px; color: var(--text2);
+      background: none; padding: 0; white-space: pre; line-height: 1.6;
+    }
+    .md-content code {
+      font-family: var(--mono); font-size: 12px; color: var(--amber);
+      background: var(--bg3); padding: 1px 5px; border-radius: 3px;
+    }
+
+    /* Tables from markdown */
+    .md-content table { width: 100%; border-collapse: collapse; margin-bottom: 14px; font-size: 12px; }
+    .md-content th { font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing: 0.06em; text-transform: uppercase; padding: 7px 10px; border-bottom: 1px solid var(--border); text-align: left; font-weight: 400; }
+    .md-content td { padding: 7px 10px; border-bottom: 1px solid var(--border); color: var(--text2); }
+    .md-content tr:last-child td { border-bottom: none; }
+
+    /* Blockquote (used for callouts / tips) */
+    .md-content blockquote {
+      border-left: 2px solid var(--accent); padding: 8px 14px;
+      background: var(--accent-dim); border-radius: 0 var(--radius) var(--radius) 0;
+      margin-bottom: 12px;
+    }
+    .md-content blockquote p { margin: 0; color: var(--text2); }
+
+    /* Tags line — rendered from a custom marker: [tags: X, Y, Z] */
+    .md-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+    .md-tag {
+      font-family: var(--mono); font-size: 11px; padding: 3px 9px;
+      border-radius: 99px; background: var(--bg3); border: 1px solid var(--border); color: var(--text3);
+    }
+
+    /* Meta line (platform / date) rendered from frontmatter-style comment */
+    .md-meta {
+      font-family: var(--mono); font-size: 11px; color: var(--text3);
+      display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px;
+    }
+
+    /* Attack chain rendered from [chain: A > B > C] */
+    .md-chain { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin: 12px 0; }
+    .md-chain-step {
+      font-family: var(--mono); font-size: 11px; padding: 4px 10px;
+      border-radius: var(--radius); background: var(--accent-dim);
+      border: 1px solid rgba(0,255,136,0.2); color: var(--accent);
+    }
+    .md-chain-arrow { color: var(--text3); font-size: 12px; }
+
+    /* Metric grid rendered from [metrics] ... [/metrics] */
+    .md-metrics { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 8px; margin: 10px 0; }
+    .md-metric { background: var(--bg3); border: 1px solid var(--border); border-radius: var(--radius); padding: 12px 14px; }
+    .md-metric .lbl { font-size: 11px; color: var(--text3); margin-bottom: 4px; }
+    .md-metric .val { font-family: var(--mono); font-size: 18px; font-weight: 500; color: var(--text); }
+    .md-metric .val.good { color: var(--accent); }
+    .md-metric .val.bad  { color: var(--red); }
+
+    /* CVE badge */
+    .md-badge {
+      display: inline-block; font-family: var(--mono); font-size: 10px;
+      padding: 2px 8px; border-radius: 99px;
+      background: var(--accent-dim); border: 1px solid rgba(0,255,136,0.3); color: var(--accent);
+    }
+
+    /* ── DEV GRID ── */
+    .dev-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 12px; }
+    .dev-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius2); padding: 16px 18px; }
+    .dev-card h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 10px; }
+    .dev-card ul { list-style: none; }
+    .dev-card li { font-size: 12px; color: var(--text2); padding: 4px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 6px; }
+    .dev-card li::before { content: '▸'; color: var(--text3); font-size: 10px; }
+    .dev-card li:last-child { border-bottom: none; }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 4px; height: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 99px; }
+
+    /* Responsive */
+    @media (max-width: 700px) {
+      .hero { grid-template-columns: 1fr; }
+      .master-detail { grid-template-columns: 1fr; }
+      .md-sidebar { border-right: none; border-bottom: 1px solid var(--border); flex-direction: row; flex-wrap: wrap; overflow-x: auto; }
+      .md-sidebar-label { display: none; }
+      .md-item, .md-item-sub { border-left: none; border-bottom: 2px solid transparent; padding: 8px 12px; white-space: nowrap; }
+      .md-item.active, .md-item-sub.active { border-bottom-color: var(--accent); border-left-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── HEADER ── -->
+  <header>
+    <div class="header-inner">
+      <span class="logo">~/portfolio</span>
+      <nav class="tab-nav" id="tabNav">
+        <button onclick="showTab('education')"  data-tab="education">Education</button>
+        <button onclick="showTab('experience')" data-tab="experience">Experience</button>
+        <button onclick="showTab('certs')"      data-tab="certs">Certifications</button>
+        <button onclick="showTab('projects')"   data-tab="projects">Projects</button>
+        <button onclick="showTab('cves')"       data-tab="cves">CVEs</button>
+        <button onclick="showTab('dev')"        data-tab="dev">Dev</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div>
+      <div class="hero-tag">Security Researcher</div>
+      <h1>Your Name</h1>
+      <p>Focused on web application testing, cloud defense, Active Directory attacks, and publishing reproducible security research. Based in Decatur, GA.</p>
+    </div>
+    <div class="contact-card">
+      <h2>Contact</h2>
+      <ul>
+        <li>🐙 <a href="https://github.com/wolffangsecurity/" target="_blank" rel="noopener">GitHub</a></li>
+        <li>🔗 <a href="https://www.linkedin.com/in//" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li>📧 <a href="mailto:@protonmail.com">@protonmail.com</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── MAIN ── -->
+  <main class="main">
+
+    <!-- EDUCATION -->
+    <section id="education" class="tab-section">
+      <div class="section-heading">Education</div>
+      <div class="card">
+        <div class="card-header"><h3>Master of Science — Cybersecurity &amp; Information Assurance</h3></div>
+        <p>Western Governors University</p>
+      </div>
+      <div class="card">
+        <div class="card-header"><h3>Bachelor of Arts — Information Science &amp; Technology</h3></div>
+        <p>Mercer University</p>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="tab-section">
+      <div class="section-heading">Professional Experience</div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Wolf Fang Security — Security Researcher</h3>
+          <span class="card-date">Jul 2025 – Present</span>
+        </div>
+        <ul>
+          <li>Identify and report vulnerabilities through web application security testing</li>
+          <li>Configured phishing lab with Gophish &amp; Evilginx to simulate credential theft</li>
+          <li>CVEs Published: CVE-2025-57244</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Log(N) Pacific — Cybersecurity Analyst</h3>
+          <span class="card-date">Jan 2024 – Present</span>
+        </div>
+        <ul>
+          <li>Automate STIG compliance with PowerShell scripting</li>
+          <li>Resolve security issues within Microsoft Sentinel, Virtual Machines, and Microsoft Entra ID</li>
+          <li>Implement and maintain Role-Based Access Control (RBAC) policies to enforce least privilege</li>
+          <li>Perform vulnerability assessments on Windows and Linux using Tenable Nessus</li>
+          <li>Conduct DISA STIG compliance audits using Tenable Vulnerability Management</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h3>Hyland — Cloud Support Analyst III</h3>
+          <span class="card-date">Feb 2021 – Present</span>
+        </div>
+        <ul>
+          <li>Analyze system logs and replicate issues to diagnose and resolve technical problems</li>
+          <li>Assist with customer deployments, system setup, and integrations for secure and seamless migrations</li>
+          <li>Test and validate APIs and cloud services for functionality, security, and performance</li>
+          <li>Investigate and resolve escalated technical issues, performing root cause analysis</li>
+          <li>Collaborate with engineering teams to develop and deploy patches, updates, and custom configurations</li>
+          <li>Review and verify security reports against CVEs, advisories, and known vulnerabilities</li>
+          <li>Mentor team members and create knowledge-base articles to improve operational efficiency</li>
+          <li>Advise on database and server management best practices to optimize performance and reduce risk</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs" class="tab-section">
+      <div class="section-heading">Certifications</div>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h3>Offensive Security</h3>
+          <ul>
+            <li>CompTIA Pentest+</li><li>Certified Ethical Hacker (CEH)</li>
+            <li>Junior Penetration Tester (eJPT)</li><li>Certified Network Pentester (CNPen)</li>
+            <li>Practical Network Penetration Tester (PNPT)</li>
+            <li>Certified Professional Penetration Tester (eCPPT)</li>
+          </ul>
+        </div>
+        <div class="cert-card">
+          <h3>Defensive Security</h3>
+          <ul>
+            <li>CompTIA CySA+</li><li>CompTIA Security+</li>
+            <li>Blue Team Level 1 (BTL1)</li><li>Security Analyst Level 1 (SAL1)</li>
+            <li>ISC2 Certified in Cybersecurity (CC)</li>
+          </ul>
+        </div>
+        <div class="cert-card">
+          <h3>Web Application Security</h3>
+          <ul>
+            <li>Certified AppSec Pentester (CAPen)</li><li>Practical Web Pentest Associate (PWPA)</li>
+            <li>Practical Web Pentest Professional (PWPP)</li>
+            <li>Web Application Penetration Tester (eWPT)</li>
+            <li>Web App Penetration Tester eXtreme (eWPTX)</li>
+          </ul>
+        </div>
+        <div class="cert-card">
+          <h3>Mobile Application Security</h3>
+          <ul>
+            <li>Certified Mobile Pentester (CMPen)</li>
+            <li>Practical Mobile Pentest Associate (PMPA)</li>
+            <li>Mobile Application Penetration Tester (eMAPT)</li>
+          </ul>
+        </div>
+        <div class="cert-card">
+          <h3>Cloud</h3>
+          <ul>
+            <li>CompTIA Cloud+</li>
+            <li>CompTIA Secure Cloud Professional (CSCP)</li>
+            <li>AWS Certified Cloud Practitioner (AWS CCP)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS (master-detail, markdown-driven) -->
+    <section id="projects" class="tab-section">
+      <div class="section-heading">Projects</div>
+      <div class="master-detail">
+        <div class="md-sidebar" id="proj-sidebar">
+          <div class="md-sidebar-label">Projects</div>
+
+          <!-- Each item: data-src = path to .md file, data-group = group key for sub-items -->
+          <div class="md-item active"
+               data-src="content/projects/az-honeynet.md"
+               onclick="loadContent(this, 'proj-pane')">
+            Azure Honeynet
+          </div>
+
+          <div class="md-item"
+               data-src="content/projects/stig-compliance.md"
+               onclick="loadContent(this, 'proj-pane')">
+            STIG Compliance
+          </div>
+
+          <!-- CTF parent: clicking expands sub-items AND loads the index -->
+          <div class="md-item"
+               data-src="content/projects/ctf-index.md"
+               data-group="ctf"
+               onclick="loadContent(this, 'proj-pane'); toggleGroup('ctf')">
+            CTF Writeups
+          </div>
+
+          <!-- CTF sub-items (hidden until parent is clicked) -->
+          <div class="md-item-sub group-ctf" style="display:none"
+               data-src="content/writeups/building-magic.md"
+               onclick="loadContent(this, 'proj-pane')">
+            Building Magic
+          </div>
+          <div class="md-item-sub group-ctf" style="display:none"
+               data-src="https://hacksmarterlabs.com"
+               data-external="true"
+               onclick="loadContent(this, 'proj-pane')">
+            Hack Smarter Labs ↗
+          </div>
+
+          <div class="md-item"
+               data-src="content/projects/cyber-labs.md"
+               onclick="loadContent(this, 'proj-pane')">
+            Cybersecurity Labs
+          </div>
+        </div>
+        <div class="md-detail-pane" id="proj-pane">
+          <div class="md-loading">Loading…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CVEs (master-detail, markdown-driven) -->
+    <section id="cves" class="tab-section">
+      <div class="section-heading">CVE Publications</div>
+      <div class="master-detail">
+        <div class="md-sidebar" id="cve-sidebar">
+          <div class="md-sidebar-label">CVEs</div>
+
+          <!-- Add a new line here each time you publish a CVE -->
+          <div class="md-item active"
+               data-src="content/cves/CVE-2025-57244.md"
+               onclick="loadContent(this, 'cve-pane')">
+            CVE-2025-57244
+          </div>
+        </div>
+        <div class="md-detail-pane" id="cve-pane">
+          <div class="md-loading">Loading…</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL DEVELOPMENT -->
+    <section id="dev" class="tab-section">
+      <div class="section-heading">Professional Development</div>
+      <div class="dev-grid">
+        <div class="dev-card">
+          <h3><a href="https://tryhackme.com/p/Wcmoawq" target="_blank" rel="noopener" style="color:var(--text);text-decoration:none">TryHackMe ↗</a></h3>
+          <ul>
+            <li>Red Teaming</li>
+            <li>Defending Azure</li>
+            <li>Penetration Testing (Network &amp; Web App)</li>
+          </ul>
+        </div>
+        <div class="dev-card">
+          <h3>Hack The Box Academy</h3>
+          <ul>
+            <li>Web Application Security</li>
+            <li>Network &amp; Service Enumeration</li>
+            <li>Active Directory Attacks</li>
+            <li>Post-Exploitation &amp; Privilege Escalation</li>
+            <li>Threat Hunting &amp; SIEM Fundamentals</li>
+          </ul>
+        </div>
+        <div class="dev-card">
+          <h3>TCM Security</h3>
+          <ul>
+            <li>Web Hacking</li><li>Bug Bounty Hunting</li>
+            <li>Practical API Hacking</li><li>Security Operations (SOC)</li>
+            <li>Linux Privilege Escalation</li><li>Practical Windows Forensics</li>
+            <li>Windows Privilege Escalation</li><li>Practical Phishing Campaigns</li>
+            <li>Open-Source Intelligence (OSINT)</li>
+            <li>Practical Malware Analysis &amp; Triage</li>
+            <li>Mobile Application Penetration Testing</li>
+          </ul>
+        </div>
+        <div class="dev-card">
+          <h3>RangeForce</h3>
+          <ul>
+            <li>Splunk</li><li>Cloud Security</li>
+            <li>Web App Security</li><li>Vulnerability Management</li>
+            <li>Threat Detection &amp; Incident Response</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer style="border-top:1px solid var(--border);padding:20px 24px;text-align:center;">
+    <span style="font-family:var(--mono);font-size:11px;color:var(--text3);">
+      <a href="#" onclick="showTab('education')" style="color:var(--text3);text-decoration:none;">↑ back to top</a>
+    </span>
+  </footer>
+
+  <script>
+    // ── Cache: avoid re-fetching the same file twice ──
+    const cache = {};
+
+    // ── Tab switching ──
+    function showTab(name) {
+      document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
+      document.querySelectorAll('.tab-nav button').forEach(b => b.classList.remove('active'));
+      const sec = document.getElementById(name);
+      if (sec) sec.classList.add('active');
+      const btn = document.querySelector(`.tab-nav button[data-tab="${name}"]`);
+      if (btn) btn.classList.add('active');
+    }
+
+    // ── Toggle sub-item groups (e.g. CTF children) ──
+    function toggleGroup(groupKey) {
+      const items = document.querySelectorAll(`.group-${groupKey}`);
+      const anyVisible = [...items].some(el => el.style.display !== 'none');
+      items.forEach(el => el.style.display = anyVisible ? 'none' : 'block');
+    }
+
+    // ── Sidebar active state ──
+    function setActive(clickedEl) {
+      // Deactivate all items in the same sidebar
+      const sidebar = clickedEl.closest('.md-sidebar');
+      if (sidebar) {
+        sidebar.querySelectorAll('.md-item, .md-item-sub').forEach(el => el.classList.remove('active'));
+      }
+      clickedEl.classList.add('active');
+    }
+
+    // ── Main fetch + render function ──
+    async function loadContent(clickedEl, paneId) {
+      setActive(clickedEl);
+
+      const src      = clickedEl.dataset.src;
+      const isExt    = clickedEl.dataset.external === 'true';
+      const pane     = document.getElementById(paneId);
+
+      // External link: just show a link-out panel
+      if (isExt) {
+        pane.innerHTML = `
+          <div class="md-content" style="margin:auto;text-align:center;padding:40px 20px;">
+            <p style="margin-bottom:16px;">This collection is hosted externally.</p>
+            <a href="${src}" target="_blank" rel="noopener"
+               style="color:var(--blue);font-family:var(--mono);font-size:13px;">
+              Open ${src} ↗
+            </a>
+          </div>`;
+        return;
+      }
+
+      // Show spinner
+      pane.innerHTML = '<div class="md-loading">Loading…</div>';
+
+      // Return cached version if available
+      if (cache[src]) {
+        pane.innerHTML = renderMarkdown(cache[src]);
+        return;
+      }
+
+      try {
+        const res = await fetch(src);
+        if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+        const text = await res.text();
+        cache[src] = text;
+        pane.innerHTML = renderMarkdown(text);
+      } catch (err) {
+        pane.innerHTML = `
+          <div class="md-error">
+            Could not load <code>${src}</code><br>
+            ${err.message}<br><br>
+            Make sure the file exists in your repo at that path.
+          </div>`;
+      }
+    }
+
+    // ── Markdown → HTML with custom block handling ──
+    function renderMarkdown(raw) {
+      // 1. Extract and strip frontmatter-style meta block
+      //    Format at top of .md file:
+      //    <!-- meta: Platform | Date | Category -->
+      let meta = '';
+      raw = raw.replace(/^<!--\s*meta:\s*(.+?)\s*-->/m, (_, line) => {
+        const parts = line.split('|').map(s => s.trim());
+        meta = `<div class="md-meta">${parts.map(p => `<span>${p}</span>`).join('')}</div>`;
+        return '';
+      });
+
+      // 2. Attack chain block: [chain: A > B > C > D]
+      raw = raw.replace(/\[chain:\s*(.+?)\]/g, (_, chain) => {
+        const steps = chain.split('>').map(s => s.trim());
+        const html = steps.map((s, i) =>
+          `<span class="md-chain-step">${s}</span>${i < steps.length - 1 ? '<span class="md-chain-arrow">→</span>' : ''}`
+        ).join('');
+        return `<div class="md-chain">${html}</div>`;
+      });
+
+      // 3. Metric blocks: [metrics] label | value | good/bad \n ... [/metrics]
+      raw = raw.replace(/\[metrics\]([\s\S]+?)\[\/metrics\]/g, (_, block) => {
+        const rows = block.trim().split('\n').filter(Boolean);
+        const cards = rows.map(row => {
+          const [label, value, tone] = row.split('|').map(s => s.trim());
+          return `<div class="md-metric"><div class="lbl">${label}</div><div class="val ${tone||''}">${value}</div></div>`;
+        });
+        return `<div class="md-metrics">${cards.join('')}</div>`;
+      });
+
+      // 4. Tags line: [tags: X, Y, Z]
+      raw = raw.replace(/\[tags:\s*(.+?)\]/g, (_, tagList) => {
+        const tags = tagList.split(',').map(t =>
+          `<span class="md-tag">${t.trim()}</span>`
+        );
+        return `<div class="md-tags">${tags.join('')}</div>`;
+      });
+
+      // 5. Badge: [badge: text]
+      raw = raw.replace(/\[badge:\s*(.+?)\]/g, (_, text) =>
+        `<span class="md-badge">${text}</span>`
+      );
+
+      // 6. Run through marked.js for standard markdown
+      const html = marked.parse(raw);
+
+      return `${meta}<div class="md-content">${html}</div>`;
+    }
+
+    // ── Auto-load defaults when a section becomes active ──
+    function autoLoad(sectionId, sidebarId) {
+      const first = document.querySelector(`#${sidebarId} .md-item[data-src]`);
+      if (first) {
+        const paneId = sectionId === 'projects' ? 'proj-pane' : 'cve-pane';
+        loadContent(first, paneId);
+      }
+    }
+
+    // ── Init ──
+    document.addEventListener('DOMContentLoaded', () => {
+      showTab('education');
+
+      // Pre-load the first item in each master-detail section
+      // so there's no blank pane on first click
+      const firstProj = document.querySelector('#proj-sidebar .md-item[data-src]');
+      if (firstProj) loadContent(firstProj, 'proj-pane');
+
+      const firstCve = document.querySelector('#cve-sidebar .md-item[data-src]');
+      if (firstCve) loadContent(firstCve, 'cve-pane');
+    });
+  </script>
+
+</body>
+</html>
