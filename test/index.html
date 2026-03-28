@@ -80,6 +80,9 @@
     .md-item-sub { padding: 8px 16px 8px 28px; font-size: 12px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
     .md-item-sub:hover { color: var(--text2); background: var(--bg3); }
     .md-item-sub.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
+    .md-item-sub2 { padding: 8px 16px 8px 42px; font-size: 11px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
+    .md-item-sub2:hover { color: var(--text2); background: var(--bg3); }
+    .md-item-sub2.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
     .md-divider { height: 1px; background: var(--border); margin: 4px 0; }
 
     /* DETAIL PANE */
@@ -151,8 +154,8 @@
       .master-detail { grid-template-columns: 1fr; }
       .md-sidebar { border-right: none; border-bottom: 1px solid var(--border); flex-direction: row; flex-wrap: wrap; overflow-x: auto; }
       .md-sidebar-label { display: none; }
-      .md-item, .md-item-sub { border-left: none; border-bottom: 2px solid transparent; padding: 8px 12px; white-space: nowrap; }
-      .md-item.active, .md-item-sub.active { border-bottom-color: var(--accent); border-left-color: transparent; }
+      .md-item, .md-item-sub, .md-item-sub2 { border-left: none; border-bottom: 2px solid transparent; padding: 8px 12px; white-space: nowrap; }
+      .md-item.active, .md-item-sub.active, .md-item-sub2.active { border-bottom-color: var(--accent); border-left-color: transparent; }
     }
   </style>
 </head>
@@ -183,7 +186,7 @@
       <ul>
         <li>🐙 <a href="https://github.com/wolffangsecurity/" target="_blank" rel="noopener">GitHub</a></li>
         <li>🔗 <a href="https://www.linkedin.com/in//" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li>📧 <a href="mailto:@protonmail.com">@protonmail.com</a></li>
+        <li>📧 <a href="/cdn-cgi/l/email-protection#3a7a4a48554e5554575b535614595557">@protonmail.com</a></li>
       </ul>
     </div>
   </section>
@@ -313,13 +316,20 @@
                data-src="content/projects/ctf-index.md"
                data-group="ctf"
                onclick="loadContent(this, 'proj-pane'); toggleGroup('ctf')">CTF Writeups</div>
+          <!-- TryHackMe platform -->
           <div class="md-item-sub group-ctf" style="display:none"
+               data-group="thm"
+               onclick="toggleGroup('thm')">↳ TryHackMe</div>
+          <div class="md-item-sub2 group-ctf group-thm" style="display:none"
+               data-src="content/writeups/lazyadmin.md"
+               onclick="loadContent(this, 'proj-pane')">Lazy Admin</div>
+          <!-- Hack Smarter Labs platform -->
+          <div class="md-item-sub group-ctf" style="display:none"
+               data-group="hsl"
+               onclick="toggleGroup('hsl')">↳ Hack Smarter Labs</div>
+          <div class="md-item-sub2 group-ctf group-hsl" style="display:none"
                data-src="content/writeups/building-magic.md"
                onclick="loadContent(this, 'proj-pane')">Building Magic</div>
-          <div class="md-item-sub group-ctf" style="display:none"
-               data-src="https://hacksmarterlabs.com"
-               data-external="true"
-               onclick="loadContent(this, 'proj-pane')">Hack Smarter Labs ↗</div>
           <div class="md-item"
                data-src="content/projects/cyber-labs.md"
                onclick="loadContent(this, 'proj-pane')">Cybersecurity Labs</div>
@@ -399,7 +409,7 @@
     </span>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     const cache = {};
 
     function showTab(name) {
@@ -412,14 +422,28 @@
     }
 
     function toggleGroup(groupKey) {
-      const items = document.querySelectorAll('.group-' + groupKey);
-      const anyVisible = [...items].some(el => el.style.display !== 'none');
-      items.forEach(el => el.style.display = anyVisible ? 'none' : 'block');
+      // Only toggle direct children of this group, not deeper nested items
+      const allInGroup = document.querySelectorAll('.group-' + groupKey);
+      // Filter to items that don't belong to a sub-group (unless that sub-group is also open)
+      const directChildren = [...allInGroup].filter(el => {
+        const classes = [...el.classList];
+        // An element is a direct child if its only group-* class is this groupKey
+        const groupClasses = classes.filter(c => c.startsWith('group-'));
+        return groupClasses.length === 1 || groupKey === 'ctf';
+      });
+      const anyVisible = directChildren.some(el => el.style.display !== 'none');
+      if (anyVisible) {
+        // Collapsing: hide everything in group including all nested
+        allInGroup.forEach(el => el.style.display = 'none');
+      } else {
+        // Expanding: show only direct children
+        directChildren.forEach(el => el.style.display = 'block');
+      }
     }
 
     function setActive(clickedEl) {
       const sidebar = clickedEl.closest('.md-sidebar');
-      if (sidebar) sidebar.querySelectorAll('.md-item, .md-item-sub').forEach(el => el.classList.remove('active'));
+      if (sidebar) sidebar.querySelectorAll('.md-item, .md-item-sub, .md-item-sub2').forEach(el => el.classList.remove('active'));
       clickedEl.classList.add('active');
     }
 
@@ -493,9 +517,4 @@
       showTab('education');
       const firstProj = document.querySelector('#proj-sidebar .md-item[data-src]');
       if (firstProj) loadContent(firstProj, 'proj-pane');
-      const firstCve = document.querySelector('#cve-sidebar .md-item[data-src]');
-      if (firstCve) loadContent(firstCve, 'cve-pane');
-    });
-  </script>
-</body>
-</html>
+      const firstCve = docu
