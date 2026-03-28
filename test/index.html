@@ -156,18 +156,11 @@
     .master-detail {
       display: grid; grid-template-columns: 220px 1fr; gap: 0;
       border: 1px solid var(--border); border-radius: var(--radius2);
-      align-items: start;
+      align-items: start; overflow: hidden;
     }
     .md-sidebar {
       background: var(--bg2); border-right: 1px solid var(--border);
       display: flex; flex-direction: column;
-      border-radius: var(--radius2) 0 0 var(--radius2);
-      position: sticky; top: 60px;
-      overflow: hidden;
-    }
-    .md-detail-pane {
-      border-radius: 0 var(--radius2) var(--radius2) 0;
-      overflow: hidden;
     }
     .md-sidebar-label {
       font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
@@ -192,6 +185,7 @@
       padding: 28px;
       display: block;
       min-width: 0;
+      box-sizing: border-box;
     }
 
     /* Images in markdown — fully responsive, never clip or overflow */
