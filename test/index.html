@@ -325,11 +325,10 @@
                data-src="content/projects/stig-compliance.md"
                onclick="loadContent(this, 'proj-pane')">STIG Compliance</div>
 
-          <!-- CTF Writeups — clicking expands platform list -->
+          <!-- CTF Writeups — clicking only expands platform list, no content load -->
           <div class="md-item"
-               data-src="content/projects/ctf-index.md"
                data-toggle="ctf-platforms"
-               onclick="loadContent(this, 'proj-pane'); toggleSection('ctf-platforms')">CTF Writeups</div>
+               onclick="toggleSection('ctf-platforms'); this.classList.toggle('active')">CTF Writeups</div>
 
           <!-- Platform: TryHackMe -->
           <div class="md-item-sub sidebar-section ctf-platforms" style="display:none"
@@ -448,27 +447,25 @@
 
     // Toggle a named section of sidebar items open/closed
     function toggleSection(sectionName) {
-      var items = document.querySelectorAll('.' + sectionName);
-      // Only act on direct members — items that have this class but are not a deeper sub-section
-      // that hasn't been opened yet
-      var anyVisible = false;
-      items.forEach(function(el) { if (el.style.display !== 'none') anyVisible = true; });
-      if (anyVisible) {
-        // Collapse: hide this section and everything nested inside it
-        items.forEach(function(el) { el.style.display = 'none'; });
-        // Also collapse any child toggles
-        var toggleName = sectionName.replace('-platforms', '-writeups');
-        if (toggleName !== sectionName) {
-          document.querySelectorAll('.' + toggleName).forEach(function(el) { el.style.display = 'none'; });
-        }
-      } else {
-        // Expand: show only direct children (items that have exactly this class among sidebar-section classes)
-        items.forEach(function(el) {
-          var classes = Array.from(el.classList).filter(function(c) { return c !== 'md-item-sub' && c !== 'md-item-sub2' && c !== 'sidebar-section'; });
-          // Direct children belong to this section but not to a sub-section toggle
-          var isDirectChild = classes.indexOf(sectionName) !== -1 && classes.length === 1;
-          if (isDirectChild) el.style.display = 'block';
+      // Find all elements that are direct members of this section
+      // Direct members have this sectionName class but no other section class
+      // (e.g. ctf-platforms items, but not thm-writeups items which are nested deeper)
+      var allItems = document.querySelectorAll('.' + sectionName);
+      var directItems = Array.from(allItems).filter(function(el) {
+        var sectionClasses = Array.from(el.classList).filter(function(c) {
+          return c !== 'md-item-sub' && c !== 'md-item-sub2' && c !== 'sidebar-section';
         });
+        return sectionClasses.length === 1 && sectionClasses[0] === sectionName;
+      });
+
+      var anyVisible = directItems.some(function(el) { return el.style.display !== 'none'; });
+
+      if (anyVisible) {
+        // Collapse: hide direct items AND everything nested beneath them
+        allItems.forEach(function(el) { el.style.display = 'none'; });
+      } else {
+        // Expand: show only direct children
+        directItems.forEach(function(el) { el.style.display = 'block'; });
       }
     }
 
