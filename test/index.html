@@ -74,21 +74,26 @@
     .master-detail { display: grid; grid-template-columns: 220px 1fr; gap: 0; border: 1px solid var(--border); border-radius: var(--radius2); overflow: hidden; align-items: start; }
     .md-sidebar { background: var(--bg2); border-right: 1px solid var(--border); display: flex; flex-direction: column; }
     .md-sidebar-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text3); padding: 14px 16px 8px; }
+
+    /* level 1 */
     .md-item { padding: 10px 16px; font-size: 13px; color: var(--text2); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; line-height: 1.4; }
     .md-item:hover { color: var(--text); background: var(--bg3); }
     .md-item.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
+
+    /* level 2 — platforms (TryHackMe, Hack Smarter Labs) */
     .md-item-sub { padding: 8px 16px 8px 28px; font-size: 12px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
     .md-item-sub:hover { color: var(--text2); background: var(--bg3); }
     .md-item-sub.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
-    .md-item-sub2 { padding: 8px 16px 8px 42px; font-size: 11px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
+
+    /* level 3 — individual writeups */
+    .md-item-sub2 { padding: 7px 16px 7px 42px; font-size: 11px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
     .md-item-sub2:hover { color: var(--text2); background: var(--bg3); }
     .md-item-sub2.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
-    .md-divider { height: 1px; background: var(--border); margin: 4px 0; }
 
     /* DETAIL PANE */
     .md-detail-pane { padding: 28px; display: block; min-width: 0; }
 
-    /* Images — the only fix: constrain to pane width */
+    /* Images */
     .md-content img { max-width: 100%; height: auto; display: block; border-radius: var(--radius); border: 1px solid var(--border); margin: 12px 0; }
 
     /* Loading / error */
@@ -117,9 +122,9 @@
     .md-content td { padding: 7px 10px; border-bottom: 1px solid var(--border); color: var(--text2); }
     .md-content tr:last-child td { border-bottom: none; }
     .md-content blockquote { border-left: 2px solid var(--accent); padding: 8px 14px; background: var(--accent-dim); border-radius: 0 var(--radius) var(--radius) 0; margin-bottom: 12px; }
-    .md-content blockquote p { margin: 0; color: var(--text2); }
+    .md-content blockquote p { margin: 0; }
 
-    /* Custom shortcodes */
+    /* Shortcodes */
     .md-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
     .md-tag { font-family: var(--mono); font-size: 11px; padding: 3px 9px; border-radius: 99px; background: var(--bg3); border: 1px solid var(--border); color: var(--text3); }
     .md-meta { font-family: var(--mono); font-size: 11px; color: var(--text3); display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
@@ -186,7 +191,7 @@
       <ul>
         <li>🐙 <a href="https://github.com/wolffangsecurity/" target="_blank" rel="noopener">GitHub</a></li>
         <li>🔗 <a href="https://www.linkedin.com/in//" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li>📧 <a href="/cdn-cgi/l/email-protection#3a7a4a48554e5554575b535614595557">@protonmail.com</a></li>
+        <li>📧 <a href="mailto:@protonmail.com">@protonmail.com</a></li>
       </ul>
     </div>
   </section>
@@ -258,8 +263,10 @@
         <div class="cert-card">
           <h3>Offensive Security</h3>
           <ul>
-            <li>CompTIA Pentest+</li><li>Certified Ethical Hacker (CEH)</li>
-            <li>Junior Penetration Tester (eJPT)</li><li>Certified Network Pentester (CNPen)</li>
+            <li>CompTIA Pentest+</li>
+            <li>Certified Ethical Hacker (CEH)</li>
+            <li>Junior Penetration Tester (eJPT)</li>
+            <li>Certified Network Pentester (CNPen)</li>
             <li>Practical Network Penetration Tester (PNPT)</li>
             <li>Certified Professional Penetration Tester (eCPPT)</li>
           </ul>
@@ -267,15 +274,18 @@
         <div class="cert-card">
           <h3>Defensive Security</h3>
           <ul>
-            <li>CompTIA CySA+</li><li>CompTIA Security+</li>
-            <li>Blue Team Level 1 (BTL1)</li><li>Security Analyst Level 1 (SAL1)</li>
+            <li>CompTIA CySA+</li>
+            <li>CompTIA Security+</li>
+            <li>Blue Team Level 1 (BTL1)</li>
+            <li>Security Analyst Level 1 (SAL1)</li>
             <li>ISC2 Certified in Cybersecurity (CC)</li>
           </ul>
         </div>
         <div class="cert-card">
           <h3>Web Application Security</h3>
           <ul>
-            <li>Certified AppSec Pentester (CAPen)</li><li>Practical Web Pentest Associate (PWPA)</li>
+            <li>Certified AppSec Pentester (CAPen)</li>
+            <li>Practical Web Pentest Associate (PWPA)</li>
             <li>Practical Web Pentest Professional (PWPP)</li>
             <li>Web Application Penetration Tester (eWPT)</li>
             <li>Web App Penetration Tester eXtreme (eWPTX)</li>
@@ -306,36 +316,45 @@
       <div class="master-detail">
         <div class="md-sidebar" id="proj-sidebar">
           <div class="md-sidebar-label">Projects</div>
+
           <div class="md-item active"
                data-src="content/projects/az-honeynet.md"
                onclick="loadContent(this, 'proj-pane')">Azure Honeynet</div>
+
           <div class="md-item"
                data-src="content/projects/stig-compliance.md"
                onclick="loadContent(this, 'proj-pane')">STIG Compliance</div>
+
+          <!-- CTF Writeups — clicking expands platform list -->
           <div class="md-item"
                data-src="content/projects/ctf-index.md"
-               data-group="ctf"
-               onclick="loadContent(this, 'proj-pane'); toggleGroup('ctf')">CTF Writeups</div>
-          <!-- TryHackMe platform -->
-          <div class="md-item-sub group-ctf" style="display:none"
-               data-group="thm"
-               onclick="toggleGroup('thm')">↳ TryHackMe</div>
-          <div class="md-item-sub2 group-ctf group-thm" style="display:none"
+               data-toggle="ctf-platforms"
+               onclick="loadContent(this, 'proj-pane'); toggleSection('ctf-platforms')">CTF Writeups</div>
+
+          <!-- Platform: TryHackMe -->
+          <div class="md-item-sub sidebar-section ctf-platforms" style="display:none"
+               data-toggle="thm-writeups"
+               onclick="toggleSection('thm-writeups')">↳ TryHackMe</div>
+
+          <div class="md-item-sub2 sidebar-section ctf-platforms thm-writeups" style="display:none"
                data-src="content/writeups/lazyadmin.md"
                onclick="loadContent(this, 'proj-pane')">Lazy Admin</div>
-          <!-- Hack Smarter Labs platform -->
-          <div class="md-item-sub group-ctf" style="display:none"
-               data-group="hsl"
-               onclick="toggleGroup('hsl')">↳ Hack Smarter Labs</div>
-          <div class="md-item-sub2 group-ctf group-hsl" style="display:none"
+
+          <!-- Platform: Hack Smarter Labs -->
+          <div class="md-item-sub sidebar-section ctf-platforms" style="display:none"
+               data-toggle="hsl-writeups"
+               onclick="toggleSection('hsl-writeups')">↳ Hack Smarter Labs</div>
+
+          <div class="md-item-sub2 sidebar-section ctf-platforms hsl-writeups" style="display:none"
                data-src="content/writeups/building-magic.md"
                onclick="loadContent(this, 'proj-pane')">Building Magic</div>
+
           <div class="md-item"
                data-src="content/projects/cyber-labs.md"
                onclick="loadContent(this, 'proj-pane')">Cybersecurity Labs</div>
         </div>
         <div class="md-detail-pane" id="proj-pane">
-          <div class="md-loading">Loading…</div>
+          <div class="md-loading">Loading&hellip;</div>
         </div>
       </div>
     </section>
@@ -351,7 +370,7 @@
                onclick="loadContent(this, 'cve-pane')">CVE-2025-57244</div>
         </div>
         <div class="md-detail-pane" id="cve-pane">
-          <div class="md-loading">Loading…</div>
+          <div class="md-loading">Loading&hellip;</div>
         </div>
       </div>
     </section>
@@ -381,10 +400,14 @@
         <div class="dev-card">
           <h3>TCM Security</h3>
           <ul>
-            <li>Web Hacking</li><li>Bug Bounty Hunting</li>
-            <li>Practical API Hacking</li><li>Security Operations (SOC)</li>
-            <li>Linux Privilege Escalation</li><li>Practical Windows Forensics</li>
-            <li>Windows Privilege Escalation</li><li>Practical Phishing Campaigns</li>
+            <li>Web Hacking</li>
+            <li>Bug Bounty Hunting</li>
+            <li>Practical API Hacking</li>
+            <li>Security Operations (SOC)</li>
+            <li>Linux Privilege Escalation</li>
+            <li>Practical Windows Forensics</li>
+            <li>Windows Privilege Escalation</li>
+            <li>Practical Phishing Campaigns</li>
             <li>Open-Source Intelligence (OSINT)</li>
             <li>Practical Malware Analysis &amp; Triage</li>
             <li>Mobile Application Penetration Testing</li>
@@ -393,8 +416,10 @@
         <div class="dev-card">
           <h3>RangeForce</h3>
           <ul>
-            <li>Splunk</li><li>Cloud Security</li>
-            <li>Web App Security</li><li>Vulnerability Management</li>
+            <li>Splunk</li>
+            <li>Cloud Security</li>
+            <li>Web App Security</li>
+            <li>Vulnerability Management</li>
             <li>Threat Detection &amp; Incident Response</li>
           </ul>
         </div>
@@ -405,67 +430,75 @@
 
   <footer style="border-top:1px solid var(--border);padding:20px 24px;text-align:center;">
     <span style="font-family:var(--mono);font-size:11px;color:var(--text3);">
-      <a href="#" onclick="showTab('education')" style="color:var(--text3);text-decoration:none;">↑ back to top</a>
+      <a href="#" onclick="showTab('education');return false;" style="color:var(--text3);text-decoration:none;">&#8593; back to top</a>
     </span>
   </footer>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    const cache = {};
+  <script>
+    var cache = {};
 
     function showTab(name) {
-      document.querySelectorAll('.tab-section').forEach(s => s.classList.remove('active'));
-      document.querySelectorAll('.tab-nav button').forEach(b => b.classList.remove('active'));
-      const sec = document.getElementById(name);
+      document.querySelectorAll('.tab-section').forEach(function(s) { s.classList.remove('active'); });
+      document.querySelectorAll('.tab-nav button').forEach(function(b) { b.classList.remove('active'); });
+      var sec = document.getElementById(name);
       if (sec) sec.classList.add('active');
-      const btn = document.querySelector('.tab-nav button[data-tab="' + name + '"]');
+      var btn = document.querySelector('.tab-nav button[data-tab="' + name + '"]');
       if (btn) btn.classList.add('active');
     }
 
-    function toggleGroup(groupKey) {
-      // Only toggle direct children of this group, not deeper nested items
-      const allInGroup = document.querySelectorAll('.group-' + groupKey);
-      // Filter to items that don't belong to a sub-group (unless that sub-group is also open)
-      const directChildren = [...allInGroup].filter(el => {
-        const classes = [...el.classList];
-        // An element is a direct child if its only group-* class is this groupKey
-        const groupClasses = classes.filter(c => c.startsWith('group-'));
-        return groupClasses.length === 1 || groupKey === 'ctf';
-      });
-      const anyVisible = directChildren.some(el => el.style.display !== 'none');
+    // Toggle a named section of sidebar items open/closed
+    function toggleSection(sectionName) {
+      var items = document.querySelectorAll('.' + sectionName);
+      // Only act on direct members — items that have this class but are not a deeper sub-section
+      // that hasn't been opened yet
+      var anyVisible = false;
+      items.forEach(function(el) { if (el.style.display !== 'none') anyVisible = true; });
       if (anyVisible) {
-        // Collapsing: hide everything in group including all nested
-        allInGroup.forEach(el => el.style.display = 'none');
+        // Collapse: hide this section and everything nested inside it
+        items.forEach(function(el) { el.style.display = 'none'; });
+        // Also collapse any child toggles
+        var toggleName = sectionName.replace('-platforms', '-writeups');
+        if (toggleName !== sectionName) {
+          document.querySelectorAll('.' + toggleName).forEach(function(el) { el.style.display = 'none'; });
+        }
       } else {
-        // Expanding: show only direct children
-        directChildren.forEach(el => el.style.display = 'block');
+        // Expand: show only direct children (items that have exactly this class among sidebar-section classes)
+        items.forEach(function(el) {
+          var classes = Array.from(el.classList).filter(function(c) { return c !== 'md-item-sub' && c !== 'md-item-sub2' && c !== 'sidebar-section'; });
+          // Direct children belong to this section but not to a sub-section toggle
+          var isDirectChild = classes.indexOf(sectionName) !== -1 && classes.length === 1;
+          if (isDirectChild) el.style.display = 'block';
+        });
       }
     }
 
     function setActive(clickedEl) {
-      const sidebar = clickedEl.closest('.md-sidebar');
-      if (sidebar) sidebar.querySelectorAll('.md-item, .md-item-sub, .md-item-sub2').forEach(el => el.classList.remove('active'));
+      var sidebar = clickedEl.closest('.md-sidebar');
+      if (sidebar) {
+        sidebar.querySelectorAll('.md-item, .md-item-sub, .md-item-sub2').forEach(function(el) {
+          el.classList.remove('active');
+        });
+      }
       clickedEl.classList.add('active');
     }
 
     async function loadContent(clickedEl, paneId) {
       setActive(clickedEl);
-      const src   = clickedEl.dataset.src;
-      const isExt = clickedEl.dataset.external === 'true';
-      const pane  = document.getElementById(paneId);
+      var src = clickedEl.dataset.src;
+      var pane = document.getElementById(paneId);
+      if (!src) return;
 
-      if (isExt) {
-        pane.innerHTML = '<div class="md-content" style="padding:40px 0;text-align:center;"><p style="margin-bottom:16px;">This collection is hosted externally.</p><a href="' + src + '" target="_blank" rel="noopener" style="color:var(--blue);font-family:var(--mono);font-size:13px;">Open ' + src + ' ↗</a></div>';
+      pane.innerHTML = '<div class="md-loading">Loading&hellip;</div>';
+
+      if (cache[src]) {
+        pane.innerHTML = renderMarkdown(cache[src]);
         return;
       }
 
-      pane.innerHTML = '<div class="md-loading">Loading…</div>';
-
-      if (cache[src]) { pane.innerHTML = renderMarkdown(cache[src]); return; }
-
       try {
-        const res = await fetch(src);
+        var res = await fetch(src);
         if (!res.ok) throw new Error(res.status + ' ' + res.statusText);
-        const text = await res.text();
+        var text = await res.text();
         cache[src] = text;
         pane.innerHTML = renderMarkdown(text);
       } catch (err) {
@@ -474,32 +507,33 @@
     }
 
     function renderMarkdown(raw) {
-      let meta = '';
+      var meta = '';
+
       raw = raw.replace(/^<!--\s*meta:\s*(.+?)\s*-->/m, function(_, line) {
-        const parts = line.split('|').map(function(s) { return s.trim(); });
+        var parts = line.split('|').map(function(s) { return s.trim(); });
         meta = '<div class="md-meta">' + parts.map(function(p) { return '<span>' + p + '</span>'; }).join('') + '</div>';
         return '';
       });
 
       raw = raw.replace(/\[chain:\s*(.+?)\]/g, function(_, chain) {
-        const steps = chain.split('>').map(function(s) { return s.trim(); });
-        const html = steps.map(function(s, i) {
-          return '<span class="md-chain-step">' + s + '</span>' + (i < steps.length - 1 ? '<span class="md-chain-arrow">→</span>' : '');
+        var steps = chain.split('>').map(function(s) { return s.trim(); });
+        var html = steps.map(function(s, i) {
+          return '<span class="md-chain-step">' + s + '</span>' + (i < steps.length - 1 ? '<span class="md-chain-arrow">&rarr;</span>' : '');
         }).join('');
         return '<div class="md-chain">' + html + '</div>';
       });
 
       raw = raw.replace(/\[metrics\]([\s\S]+?)\[\/metrics\]/g, function(_, block) {
-        const rows = block.trim().split('\n').filter(Boolean);
-        const cards = rows.map(function(row) {
-          const parts = row.split('|').map(function(s) { return s.trim(); });
-          return '<div class="md-metric"><div class="lbl">' + parts[0] + '</div><div class="val ' + (parts[2]||'') + '">' + parts[1] + '</div></div>';
+        var rows = block.trim().split('\n').filter(Boolean);
+        var cards = rows.map(function(row) {
+          var parts = row.split('|').map(function(s) { return s.trim(); });
+          return '<div class="md-metric"><div class="lbl">' + parts[0] + '</div><div class="val ' + (parts[2] || '') + '">' + parts[1] + '</div></div>';
         });
         return '<div class="md-metrics">' + cards.join('') + '</div>';
       });
 
       raw = raw.replace(/\[tags:\s*(.+?)\]/g, function(_, tagList) {
-        const tags = tagList.split(',').map(function(t) {
+        var tags = tagList.split(',').map(function(t) {
           return '<span class="md-tag">' + t.trim() + '</span>';
         });
         return '<div class="md-tags">' + tags.join('') + '</div>';
@@ -509,12 +543,17 @@
         return '<span class="md-badge">' + text + '</span>';
       });
 
-      const html = marked.parse(raw);
+      var html = marked.parse(raw);
       return meta + '<div class="md-content">' + html + '</div>';
     }
 
     document.addEventListener('DOMContentLoaded', function() {
       showTab('education');
-      const firstProj = document.querySelector('#proj-sidebar .md-item[data-src]');
+      var firstProj = document.querySelector('#proj-sidebar .md-item[data-src]');
       if (firstProj) loadContent(firstProj, 'proj-pane');
-      const firstCve = docu
+      var firstCve = document.querySelector('#cve-sidebar .md-item[data-src]');
+      if (firstCve) loadContent(firstCve, 'cve-pane');
+    });
+  </script>
+</body>
+</html>
