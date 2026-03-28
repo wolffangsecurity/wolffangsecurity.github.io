@@ -60,19 +60,20 @@
     .cert-card li { font-size: 13px; color: var(--text2); padding: 4px 0; border-bottom: 1px solid var(--border); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .cert-card li:last-child { border-bottom: none; }
     .master-detail { display: grid; grid-template-columns: 220px 1fr; gap: 0; border: 1px solid var(--border); border-radius: var(--radius2); overflow: hidden; align-items: start; }
-    .md-sidebar { background: var(--bg2); border-right: 1px solid var(--border); display: flex; flex-direction: column; }
-    .md-sidebar-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text3); padding: 14px 16px 8px; }
-    .md-item { padding: 10px 16px; font-size: 13px; color: var(--text2); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; line-height: 1.4; }
+    .md-sidebar { background: var(--bg2); border-right: 1px solid var(--border); display: flex; flex-direction: column; overflow-y: auto; max-height: 80vh; }
+    .md-sidebar-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text3); padding: 14px 16px 8px; position: sticky; top: 0; background: var(--bg2); }
+    .md-item { padding: 10px 16px; font-size: 13px; color: var(--text2); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; line-height: 1.4; flex-shrink: 0; }
     .md-item:hover { color: var(--text); background: var(--bg3); }
     .md-item.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
-    .md-item-sub { padding: 8px 16px 8px 28px; font-size: 12px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
+    .md-item-sub { padding: 8px 16px 8px 28px; font-size: 12px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; flex-shrink: 0; }
     .md-item-sub:hover { color: var(--text2); background: var(--bg3); }
     .md-item-sub.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
-    .md-item-sub2 { padding: 7px 16px 7px 42px; font-size: 11px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; }
+    .md-item-sub2 { padding: 7px 16px 7px 42px; font-size: 11px; color: var(--text3); cursor: pointer; border-left: 2px solid transparent; transition: all 0.12s; flex-shrink: 0; }
     .md-item-sub2:hover { color: var(--text2); background: var(--bg3); }
     .md-item-sub2.active { color: var(--accent); background: var(--accent-dim); border-left-color: var(--accent); }
     .md-detail-pane { padding: 28px; display: block; min-width: 0; }
     .md-content img { max-width: 100%; height: auto; display: block; border-radius: var(--radius); border: 1px solid var(--border); margin: 12px 0; }
+    .md-content iframe { max-width: 100%; border-radius: var(--radius); margin: 12px 0; }
     .md-loading { display: flex; align-items: center; gap: 10px; color: var(--text3); font-family: var(--mono); font-size: 12px; padding: 40px 0; }
     .md-loading::before { content: ''; width: 14px; height: 14px; border-radius: 50%; border: 1.5px solid var(--border2); border-top-color: var(--accent); animation: spin 0.7s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
@@ -80,10 +81,10 @@
     .md-content h1 { font-size: 18px; font-weight: 600; color: var(--text); margin: 0 0 6px; }
     .md-content h2 { font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing: 0.1em; text-transform: uppercase; margin: 24px 0 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
     .md-content h3 { font-size: 14px; font-weight: 600; color: var(--text); margin: 18px 0 8px; }
-    .md-content p  { color: var(--text2); font-size: 13px; line-height: 1.75; margin-bottom: 12px; }
+    .md-content p { color: var(--text2); font-size: 13px; line-height: 1.75; margin-bottom: 12px; }
     .md-content ul, .md-content ol { padding-left: 18px; color: var(--text2); font-size: 13px; margin-bottom: 12px; }
     .md-content li { margin-bottom: 4px; line-height: 1.6; }
-    .md-content a  { color: var(--blue); text-decoration: none; }
+    .md-content a { color: var(--blue); text-decoration: none; }
     .md-content a:hover { text-decoration: underline; }
     .md-content strong { color: var(--text); font-weight: 600; }
     .md-content em { color: var(--text2); font-style: italic; }
@@ -108,14 +109,13 @@
     .md-metric .lbl { font-size: 11px; color: var(--text3); margin-bottom: 4px; }
     .md-metric .val { font-family: var(--mono); font-size: 18px; font-weight: 500; color: var(--text); }
     .md-metric .val.good { color: var(--accent); }
-    .md-metric .val.bad  { color: var(--red); }
+    .md-metric .val.bad { color: var(--red); }
     .md-badge { display: inline-block; font-family: var(--mono); font-size: 10px; padding: 2px 8px; border-radius: 99px; background: var(--accent-dim); border: 1px solid rgba(0,255,136,0.3); color: var(--accent); }
     .dev-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 12px; }
     .dev-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius2); padding: 16px 18px; }
     .dev-card h3 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 10px; }
     .dev-card ul { list-style: none; }
     .dev-card li { font-size: 12px; color: var(--text2); padding: 4px 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 6px; }
-    .dev-card li::before { content: '\25B8'; color: var(--text3); font-size: 10px; }
     .dev-card li:last-child { border-bottom: none; }
     ::-webkit-scrollbar { width: 4px; height: 4px; }
     ::-webkit-scrollbar-track { background: transparent; }
@@ -123,7 +123,7 @@
     @media (max-width: 700px) {
       .hero { grid-template-columns: 1fr; }
       .master-detail { grid-template-columns: 1fr; }
-      .md-sidebar { border-right: none; border-bottom: 1px solid var(--border); flex-direction: row; flex-wrap: wrap; overflow-x: auto; }
+      .md-sidebar { border-right: none; border-bottom: 1px solid var(--border); flex-direction: row; flex-wrap: wrap; overflow-x: auto; max-height: none; }
       .md-sidebar-label { display: none; }
       .md-item, .md-item-sub, .md-item-sub2 { border-left: none; border-bottom: 2px solid transparent; padding: 8px 12px; white-space: nowrap; }
       .md-item.active, .md-item-sub.active, .md-item-sub2.active { border-bottom-color: var(--accent); border-left-color: transparent; }
@@ -135,31 +135,30 @@
     <div class="header-inner">
       <span class="logo">~/portfolio</span>
       <nav class="tab-nav" id="tabNav">
-        <button onclick="showTab('education')"  data-tab="education">Education</button>
+        <button onclick="showTab('education')" data-tab="education">Education</button>
         <button onclick="showTab('experience')" data-tab="experience">Experience</button>
-        <button onclick="showTab('certs')"      data-tab="certs">Certifications</button>
-        <button onclick="showTab('projects')"   data-tab="projects">Projects</button>
-        <button onclick="showTab('cves')"       data-tab="cves">CVEs</button>
-        <button onclick="showTab('dev')"        data-tab="dev">Dev</button>
+        <button onclick="showTab('certs')" data-tab="certs">Certifications</button>
+        <button onclick="showTab('projects')" data-tab="projects">Projects</button>
+        <button onclick="showTab('cves')" data-tab="cves">CVEs</button>
+        <button onclick="showTab('dev')" data-tab="dev">Dev</button>
       </nav>
     </div>
   </header>
 
   <section class="hero">
     <div>
-      <div class="hero-tag"></div>
+      <div class="hero-tag">Security Researcher</div>
       <h1>Sameal Con-Roma</h1>
-      <p>Cybersecurity Professional with hands on experience in penetration testing, cloud security, and technical operations. Proven ability to bridge red team and blue team disciplines — from STIG compliance automation and vulnerability management to web application security research.</p>
+      <p>Cybersecurity Professional with hands on experience in penetration testing, cloud security, and technical operations. Proven ability to bridge red team and blue team disciplines &mdash; from STIG compliance automation and vulnerability management to web application security research.</p>
     </div>
     <div class="contact-card">
       <h2>Contact</h2>
       <ul>
-        <li>&#x1F4E7; <a href="mailto:@protonmail.com">sconroma@protonmail.com</a></li>
+        <li>&#x1F4E7;sconroma@protonmail.com</li>
       </ul>
     </div>
   </section>
-
-  <main class="main">
+<main class="main">
 
     <section id="education" class="tab-section">
       <div class="section-heading">Education</div>
@@ -270,7 +269,59 @@
         <div class="md-sidebar" id="proj-sidebar">
           <div class="md-sidebar-label">Projects</div>
           <div class="md-item active" data-src="content/projects/az-honeynet.md" onclick="loadContent(this,'proj-pane')">Azure Honeynet</div>
-          <div class="md-item" data-src="content/projects/stig-compliance.md" onclick="loadContent(this,'proj-pane')">STIG Compliance</div>
+          <div class="md-item" data-toggle="stig-list" onclick="toggleSection('stig-list')">STIG Compliance</div>
+          <div class="md-item-sub sidebar-section stig-list" style="display:none" data-toggle="win11-stigs" onclick="toggleSection('win11-stigs')">↳ Windows 11</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000010.md" onclick="loadContent(this,'proj-pane')">WN11-00-000010</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000031.md" onclick="loadContent(this,'proj-pane')">WN11-00-000031</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000032.md" onclick="loadContent(this,'proj-pane')">WN11-00-000032</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000045.md" onclick="loadContent(this,'proj-pane')">WN11-00-000045</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000150.md" onclick="loadContent(this,'proj-pane')">WN11-00-000150</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000155.md" onclick="loadContent(this,'proj-pane')">WN11-00-000155</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000165.md" onclick="loadContent(this,'proj-pane')">WN11-00-000165</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000175.md" onclick="loadContent(this,'proj-pane')">WN11-00-000175</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000210.md" onclick="loadContent(this,'proj-pane')">WN11-00-000210</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-00-000395.md" onclick="loadContent(this,'proj-pane')">WN11-00-000395</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AC-000005.md" onclick="loadContent(this,'proj-pane')">WN11-AC-000005</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AC-000010.md" onclick="loadContent(this,'proj-pane')">WN11-AC-000010</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AC-000015.md" onclick="loadContent(this,'proj-pane')">WN11-AC-000015</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AC-000020.md" onclick="loadContent(this,'proj-pane')">WN11-AC-000020</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AC-000030.md" onclick="loadContent(this,'proj-pane')">WN11-AC-000030</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AC-000035.md" onclick="loadContent(this,'proj-pane')">WN11-AC-000035</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AC-000040.md" onclick="loadContent(this,'proj-pane')">WN11-AC-000040</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AU-000500.md" onclick="loadContent(this,'proj-pane')">WN11-AU-000500</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AU-000505.md" onclick="loadContent(this,'proj-pane')">WN11-AU-000505</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-AU-000510.md" onclick="loadContent(this,'proj-pane')">WN11-AU-000510</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000010.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000010</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000020.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000020</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000025.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000025</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000030.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000030</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000035.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000035</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000038.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000038</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000039.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000039</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000040.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000040</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000044.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000044</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000050.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000050</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000052.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000052</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000060.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000060</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000065.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000065</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000066.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000066</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000068.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000068</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000085.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000085</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000090.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000090</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000100.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000100</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000105.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000105</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000110.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000110</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000120.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000120</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000145.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000145</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000150.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000150</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000155.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000155</div>
+          <div class="md-item-sub2 sidebar-section stig-list win11-stigs" style="display:none" data-src="content/stigs/WN11-CC-000165.md" onclick="loadContent(this,'proj-pane')">WN11-CC-000165</div>
+          <div class="md-item-sub sidebar-section stig-list" style="display:none" data-toggle="win10-stigs" onclick="toggleSection('win10-stigs')">↳ Windows 10</div>
+          <div class="md-item-sub2 sidebar-section stig-list win10-stigs" style="display:none" data-src="content/stigs/WN10-00-000031.md" onclick="loadContent(this,'proj-pane')">WN10-00-000031</div>
+          <div class="md-item-sub2 sidebar-section stig-list win10-stigs" style="display:none" data-src="content/stigs/WN10-00-000032.md" onclick="loadContent(this,'proj-pane')">WN10-00-000032</div>
+          <div class="md-item-sub2 sidebar-section stig-list win10-stigs" style="display:none" data-src="content/stigs/WN10-00-000107.md" onclick="loadContent(this,'proj-pane')">WN10-00-000107</div>
+          <div class="md-item-sub2 sidebar-section stig-list win10-stigs" style="display:none" data-src="content/stigs/WN10-00-000145.md" onclick="loadContent(this,'proj-pane')">WN10-00-000145</div>
+          <div class="md-item-sub2 sidebar-section stig-list win10-stigs" style="display:none" data-src="content/stigs/WN10-00-000150.md" onclick="loadContent(this,'proj-pane')">WN10-00-000150</div>
           <div class="md-item" data-toggle="ctf-platforms" onclick="toggleSection('ctf-platforms')">CTF Writeups</div>
           <div class="md-item-sub sidebar-section ctf-platforms" style="display:none" data-toggle="thm-writeups" onclick="toggleSection('thm-writeups')">&#x21B3; TryHackMe</div>
           <div class="md-item-sub2 sidebar-section ctf-platforms thm-writeups" style="display:none" data-src="content/writeups/lazyadmin.md" onclick="loadContent(this,'proj-pane')">Lazy Admin</div>
@@ -297,7 +348,6 @@
     <section id="dev" class="tab-section">
       <div class="section-heading">Professional Development</div>
       <div class="dev-grid">
-       
         <div class="dev-card">
           <h3>Hack The Box Academy</h3>
           <ul><li>Web Application Security</li><li>Network &amp; Service Enumeration</li><li>Active Directory Attacks</li><li>Post-Exploitation &amp; Privilege Escalation</li><li>Threat Hunting &amp; SIEM Fundamentals</li></ul>
@@ -320,7 +370,6 @@
       <a href="#" onclick="showTab('education');return false;" style="color:var(--text3);text-decoration:none;">&#8593; back to top</a>
     </span>
   </footer>
-
   <script>
     var cache = {};
 
@@ -335,7 +384,6 @@
 
     function toggleSection(sectionName) {
       var allItems = document.querySelectorAll('.' + sectionName);
-      // Direct children: elements whose last section class is sectionName
       var directItems = Array.from(allItems).filter(function(el) {
         var sc = Array.from(el.classList).filter(function(c) {
           return c !== 'md-item-sub' && c !== 'md-item-sub2' && c !== 'sidebar-section';
@@ -344,10 +392,8 @@
       });
       var anyVisible = directItems.some(function(el) { return el.style.display !== 'none'; });
       if (anyVisible) {
-        // Collapse: hide everything in this group including nested
         allItems.forEach(function(el) { el.style.display = 'none'; });
       } else {
-        // Expand: show direct children only
         directItems.forEach(function(el) { el.style.display = 'block'; });
       }
     }
