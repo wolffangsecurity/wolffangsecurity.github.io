@@ -156,11 +156,18 @@
     .master-detail {
       display: grid; grid-template-columns: 220px 1fr; gap: 0;
       border: 1px solid var(--border); border-radius: var(--radius2);
-      overflow: hidden; min-height: 500px;
+      align-items: start;
     }
     .md-sidebar {
       background: var(--bg2); border-right: 1px solid var(--border);
       display: flex; flex-direction: column;
+      border-radius: var(--radius2) 0 0 var(--radius2);
+      position: sticky; top: 60px;
+      overflow: hidden;
+    }
+    .md-detail-pane {
+      border-radius: 0 var(--radius2) var(--radius2) 0;
+      overflow: hidden;
     }
     .md-sidebar-label {
       font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em;
@@ -182,8 +189,16 @@
 
     /* ── DETAIL PANE ── */
     .md-detail-pane {
-      padding: 28px; overflow-y: auto; min-height: 500px;
-      display: flex; flex-direction: column;
+      padding: 28px;
+      display: block;
+      min-width: 0;
+    }
+
+    /* Images in markdown — fully responsive, never clip or overflow */
+    .md-content img {
+      max-width: 100%; width: 100%; height: auto; display: block;
+      border-radius: var(--radius); border: 1px solid var(--border);
+      margin: 12px 0;
     }
 
     /* Loading state */
@@ -338,7 +353,7 @@
       <ul>
         <li>🐙 <a href="https://github.com/wolffangsecurity/" target="_blank" rel="noopener">GitHub</a></li>
         <li>🔗 <a href="https://www.linkedin.com/in//" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li>📧 <a href="mailto:@protonmail.com">@protonmail.com</a></li>
+        <li>📧 <a href="/cdn-cgi/l/email-protection#703000021f041f1e1d11191c5e131f1d">@protonmail.com</a></li>
       </ul>
     </div>
   </section>
@@ -579,7 +594,7 @@
     </span>
   </footer>
 
-  <script>
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
     // ── Cache: avoid re-fetching the same file twice ──
     const cache = {};
 
@@ -724,10 +739,4 @@
       const firstProj = document.querySelector('#proj-sidebar .md-item[data-src]');
       if (firstProj) loadContent(firstProj, 'proj-pane');
 
-      const firstCve = document.querySelector('#cve-sidebar .md-item[data-src]');
-      if (firstCve) loadContent(firstCve, 'cve-pane');
-    });
-  </script>
-
-</body>
-</html>
+      const firstCve = docum
