@@ -3,7 +3,8 @@
 ## Overview
 This project documents a cloud security implementation plan for a 
 simulated organization migrating from on-premises infrastructure to 
-Microsoft Azure under an IaaS model. The engagement covers identity 
+Microsoft Azure under an Infrastructure as a Service
+(IaaS) model. The engagement covers identity 
 and access management, encryption, backup configuration, compliance 
 mapping, and threat mitigation across a multi-department Azure 
 environment.
@@ -15,7 +16,7 @@ Azure Backup, Microsoft Defender for Cloud, Azure PowerShell
 
 ## Scenario
 A mid-sized organization with U.S. government contracts and daily 
-payment card transactions is migrating to Azure IaaS following the 
+payment card transactions is migrating to Azure  following the 
 departure of a key IT consultant. The departure exposed gaps in 
 access control, backup verification, and vulnerability scanning 
 boundaries. Senior leadership requires a documented security plan 
@@ -26,15 +27,18 @@ The environment consists of three departments: Accounting, Marketing,
 and IT each with dedicated resource groups, virtual machines, 
 key vaults, and distinct access requirements.
 
+> **Note:** Screenshots were captured in a provisioned lab environment. 
+> Resource and group names reflect the original lab configuration.
+
 ## Contents
 
-- [Executive Summary](#executive-summary)
-- [Proposed Architecture](#proposed-architecture)
-- [Access Control Design](#access-control-design)
-- [Encryption Strategy](#encryption-strategy)
-- [Backup Configuration](#backup-configuration)
-- [Shared Responsibility and Compliance](#shared-responsibility-and-compliance)
-- [Threat Landscape](#threat-landscape)
+- Executive Summary
+- Proposed Architecture
+- Access Control Design
+- Encryption Strategy
+- Backup Configuration
+- Shared Responsibility and Compliance
+- Threat Landscape
 
 ## Executive Summary
 Harwick Defense Solutions, LLC (HDS) is currently transitioning to Microsoft Azure due to constraints with their leased data centers. 
@@ -115,7 +119,7 @@ The `IT_HDS_Users` group should be granted the following built-in roles:
   assignments, or sharing image galleries.
 - **Virtual Machine Contributor:** Create and manage virtual machines, 
   manage disks, install and run software, reset the root user password via 
-  VM extensions, and manage local user accounts via VM extensions. Does not 
+  VM extensions, and manage local user accounts via VM extensions. It does not 
   grant access to the connected virtual network or storage account, and does 
   not allow role assignments in Azure RBAC.
 - **Network Contributor:** Manage networking resources.
@@ -248,11 +252,7 @@ $KeyVault = Get-AzKeyVault -VaultName HDS-KeyVault-IT -ResourceGroupName it-rg
 
 5. Apply disk encryption:
 ```powershell
-Set-AzVMDiskEncryptionExtension `
-  -ResourceGroupName it-rg `
-  -VMName it-vm `
-  -DiskEncryptionKeyVaultUrl $KeyVault.VaultUri `
-  -DiskEncryptionKeyVaultId $KeyVault.ResourceId
+Set-AzVMDiskEncryptionExtension  -ResourceGroupName it-rg -VMName it-vm -DiskEncryptionKeyVaultUrl $KeyVault.VaultUri -DiskEncryptionKeyVaultId $KeyVault.ResourceId
 ```
 
 ### Encryption Recommendations
@@ -373,8 +373,7 @@ including hardware, networking fabric, and the hypervisor layer.
 
 Using Microsoft Defender for Cloud, HDS can assign and monitor 
 regulatory compliance standards directly within the Azure environment. 
-Navigate to **Defender for Cloud > Environment Settings > Edit Settings 
-> Security Policies** and enable the following frameworks:
+Navigate to `Defender for Cloud > Environment Settings > Edit Settings > Security Policies` and enable the following frameworks:
 
 <img width="975" height="376" alt="image" src="https://github.com/user-attachments/assets/4a77c542-c8f7-48dc-8019-18ffa443ef99" />
 
