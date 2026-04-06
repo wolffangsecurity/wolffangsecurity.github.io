@@ -32,13 +32,13 @@ key vaults, and distinct access requirements.
 
 ## Contents
 
-- Executive Summary
-- Proposed Architecture
-- Access Control Design
-- Encryption Strategy
-- Backup Configuration
-- Shared Responsibility and Compliance
-- Threat Landscape
+- [Executive Summary](#executive-summary)
+- [Proposed Architecture](#proposed-architecture)
+- [Access Control Design](#access-control-design)
+- [Encryption Strategy](#encryption-strategy)
+- [Backup Configuration](#backup-configuration)
+- [Shared Responsibility and Compliance](#shared-responsibility-and-compliance)
+- [Threat Landscape](#threat-landscape)
 
 ## Executive Summary
 Harwick Defense Solutions, LLC (HDS) is currently transitioning to Microsoft Azure due to constraints with their leased data centers. 
@@ -429,9 +429,9 @@ within the IT resource group. The Accounting resource group contained
 only the Marketing Key Vault, and the Marketing resource group contained 
 only the Accounting Key Vault.
 
-![Initial IT resource group state](screenshots/rg-initial-it.png)
-![Initial Accounting resource group state](screenshots/rg-initial-accounting.png)
-![Initial Marketing resource group state](screenshots/rg-initial-marketing.png)
+<img width="975" height="401" alt="image" src="https://github.com/user-attachments/assets/4af4368d-c0ac-40bb-82a7-798672716ffd" />
+<img width="975" height="400" alt="image" src="https://github.com/user-attachments/assets/f550e2fd-ef58-4d39-98bb-2460b14bc25f" />
+<img width="975" height="401" alt="image" src="https://github.com/user-attachments/assets/4c884304-5ba4-4aea-ac8e-5b02111e377c" />
 
 ### Asset Remediation
 
@@ -443,13 +443,13 @@ Move the following assets from `IT-rg` to `Accounting-rg`:
 - `accounting-vnet`
 
 1. Select the assets and click **Move > Move to another resource group**
-
-   ![Asset move selection](screenshots/rg-move-select.png)
-
 2. Set the destination to `Accounting-rg` and confirm
 
-   ![Resource group destination](screenshots/rg-move-destination.png)
-   ![Move confirmation](screenshots/rg-move-confirm.png)
+   <img width="975" height="406" alt="image" src="https://github.com/user-attachments/assets/9fc272eb-9754-4018-b43e-605cd08a7f29" />
+   <img width="975" height="404" alt="image" src="https://github.com/user-attachments/assets/191c7f74-5da4-449a-acbe-ffed78779cb3" />
+   <img width="975" height="401" alt="image" src="https://github.com/user-attachments/assets/432f90c7-4c80-447f-9926-c43343cddc7d" />
+   <img width="975" height="400" alt="image" src="https://github.com/user-attachments/assets/d1cd39d2-55cc-4cf0-8535-bb5ad8b21c5d" />
+   <img width="975" height="398" alt="image" src="https://github.com/user-attachments/assets/73053663-bc1c-4273-8c59-145969afdf33" />
 
 Repeat the same process to move the following to `Marketing-rg`:
 - `marketing-vm`
@@ -457,7 +457,13 @@ Repeat the same process to move the following to `Marketing-rg`:
 - `marketing-vmNic`
 - `marketing-vnet`
 
-![Marketing assets moved](screenshots/rg-marketing-move.png)
+<img width="975" height="372" alt="image" src="https://github.com/user-attachments/assets/2ad0cb9e-447d-4b85-ad65-78d0d70fdf10" />
+<img width="975" height="405" alt="image" src="https://github.com/user-attachments/assets/a004c0bd-eb18-4592-be07-0303fe6fdedb" />
+<img width="975" height="401" alt="image" src="https://github.com/user-attachments/assets/5a340a78-abbb-4258-a8af-07465ed79ef5" />
+<img width="975" height="401" alt="image" src="https://github.com/user-attachments/assets/9a8258cf-d050-4ddb-8943-f883eaae4d3b" />
+<img width="975" height="371" alt="image" src="https://github.com/user-attachments/assets/000d4455-c4a9-4ffe-975b-b48121ba99e9" />
+
+
 
 #### Key Vault Reassignment
 
