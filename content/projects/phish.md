@@ -7,6 +7,6 @@ unwraps redirect-wrapped links, and flags brand impersonation,
 homoglyph evasion, and risky attachments.
 
 
-<iframe src="/phish-analyze.html" style="width:100%;height:820px;border:1px solid #242424;border-radius:10px;" loading="lazy"></iframe>
+<iframe src="content/projects/phish-analyze.html" style="width:100%;height:820px;border:1px solid #242424;border-radius:10px;" loading="lazy"></iframe>
 
 ...
